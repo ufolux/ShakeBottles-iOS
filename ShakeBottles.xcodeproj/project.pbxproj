@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041E8DF227EDC6850028C7CF /* MeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8DF127EDC6850028C7CF /* MeNavigationController.swift */; };
+		041E8DF527EDC7570028C7CF /* BottlesNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8DF427EDC7570028C7CF /* BottlesNavigationController.swift */; };
+		041E8DF727EDC7670028C7CF /* ShakeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8DF627EDC7670028C7CF /* ShakeNavigationController.swift */; };
 		0474FA0527ECDA540079C939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474FA0427ECDA540079C939 /* AppDelegate.swift */; };
 		0474FA0727ECDA540079C939 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474FA0627ECDA540079C939 /* SceneDelegate.swift */; };
 		0474FA0927ECDA540079C939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474FA0827ECDA540079C939 /* ViewController.swift */; };
@@ -16,6 +19,20 @@
 		0474FA1C27ECDA550079C939 /* ShakeBottlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474FA1B27ECDA550079C939 /* ShakeBottlesTests.swift */; };
 		0474FA2627ECDA550079C939 /* ShakeBottlesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474FA2527ECDA550079C939 /* ShakeBottlesUITests.swift */; };
 		0474FA2827ECDA550079C939 /* ShakeBottlesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474FA2727ECDA550079C939 /* ShakeBottlesUITestsLaunchTests.swift */; };
+		1CBCE6E3E1709591667B5C97 /* Pods_ShakeBottles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5CB30138BDB7AF589FA0E9 /* Pods_ShakeBottles.framework */; };
+		543AABF1A0EF02DF9813E35B /* Pods_ShakeBottles_ShakeBottlesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E63EEAFDBAEE7769E0EB393 /* Pods_ShakeBottles_ShakeBottlesUITests.framework */; };
+		66927E2C35D228AE905264FF /* Pods_ShakeBottlesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64822670690957EEFB699817 /* Pods_ShakeBottlesTests.framework */; };
+		685F344952A131EFE5C8C49E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F305574CDC0249065C2C0 /* BaseViewController.swift */; };
+		685F34B2ED657298DA65C345 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F3A011DCFC4F6F325F8EB /* BaseTabBarController.swift */; };
+		685F354421BD6288AED186E4 /* TabNavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F37594D4E8B19E32AC9C7 /* TabNavigationMenu.swift */; };
+		685F358B5B7F3B4B55AE0E28 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F32D3F903EBF9D939E8FE /* MainTabBarController.swift */; };
+		685F395318B46CA592FE0A5E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F3C46632B51F40B6217D5 /* BaseView.swift */; };
+		685F39921E8859EF704CDC52 /* BaseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F325901187923415B6951 /* BaseImageView.swift */; };
+		685F39ABD055AEA055238CAE /* BottlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F38C112CDD3D73877443E /* BottlesViewController.swift */; };
+		685F3DC4BDBE5DC2D7D1950E /* ShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F3C62C2C5013E658FE302 /* ShakeViewController.swift */; };
+		685F3DDDB655A29AC1688D2E /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F344CE1EA2CA79B3BCE5E /* TabItem.swift */; };
+		685F3F344423DE68D47E8C7D /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F326639905DEC179558F8 /* MeViewController.swift */; };
+		685F3F4FC5F6A28AB0C4AD1C /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F32A68103ADAC38DC0F03 /* BaseLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041E8DF127EDC6850028C7CF /* MeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeNavigationController.swift; sourceTree = "<group>"; };
+		041E8DF427EDC7570028C7CF /* BottlesNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottlesNavigationController.swift; sourceTree = "<group>"; };
+		041E8DF627EDC7670028C7CF /* ShakeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeNavigationController.swift; sourceTree = "<group>"; };
 		0474FA0127ECDA540079C939 /* ShakeBottles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShakeBottles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0474FA0427ECDA540079C939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0474FA0627ECDA540079C939 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,26 @@
 		0474FA2127ECDA550079C939 /* ShakeBottlesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakeBottlesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0474FA2527ECDA550079C939 /* ShakeBottlesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeBottlesUITests.swift; sourceTree = "<group>"; };
 		0474FA2727ECDA550079C939 /* ShakeBottlesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeBottlesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D5CB30138BDB7AF589FA0E9 /* Pods_ShakeBottles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShakeBottles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35CB27624219CCF69B060171 /* Pods-ShakeBottles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakeBottles.debug.xcconfig"; path = "Target Support Files/Pods-ShakeBottles/Pods-ShakeBottles.debug.xcconfig"; sourceTree = "<group>"; };
+		64822670690957EEFB699817 /* Pods_ShakeBottlesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShakeBottlesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		685F305574CDC0249065C2C0 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		685F325901187923415B6951 /* BaseImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseImageView.swift; sourceTree = "<group>"; };
+		685F326639905DEC179558F8 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		685F32A68103ADAC38DC0F03 /* BaseLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
+		685F32D3F903EBF9D939E8FE /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		685F344CE1EA2CA79B3BCE5E /* TabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		685F37594D4E8B19E32AC9C7 /* TabNavigationMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationMenu.swift; sourceTree = "<group>"; };
+		685F38C112CDD3D73877443E /* BottlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottlesViewController.swift; sourceTree = "<group>"; };
+		685F3A011DCFC4F6F325F8EB /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		685F3C46632B51F40B6217D5 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		685F3C62C2C5013E658FE302 /* ShakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeViewController.swift; sourceTree = "<group>"; };
+		9E63EEAFDBAEE7769E0EB393 /* Pods_ShakeBottles_ShakeBottlesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShakeBottles_ShakeBottlesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3BF67125604C35C1BFA485 /* Pods-ShakeBottles-ShakeBottlesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakeBottles-ShakeBottlesUITests.release.xcconfig"; path = "Target Support Files/Pods-ShakeBottles-ShakeBottlesUITests/Pods-ShakeBottles-ShakeBottlesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DC49E11C4C27F351082A391A /* Pods-ShakeBottlesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakeBottlesTests.debug.xcconfig"; path = "Target Support Files/Pods-ShakeBottlesTests/Pods-ShakeBottlesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDF1EE61AC424C9919118B33 /* Pods-ShakeBottles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakeBottles.release.xcconfig"; path = "Target Support Files/Pods-ShakeBottles/Pods-ShakeBottles.release.xcconfig"; sourceTree = "<group>"; };
+		EFA8BF96CEE344C7CE346C06 /* Pods-ShakeBottles-ShakeBottlesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakeBottles-ShakeBottlesUITests.debug.xcconfig"; path = "Target Support Files/Pods-ShakeBottles-ShakeBottlesUITests/Pods-ShakeBottles-ShakeBottlesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F30BDE41A5D7960E441FF870 /* Pods-ShakeBottlesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakeBottlesTests.release.xcconfig"; path = "Target Support Files/Pods-ShakeBottlesTests/Pods-ShakeBottlesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CBCE6E3E1709591667B5C97 /* Pods_ShakeBottles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66927E2C35D228AE905264FF /* Pods_ShakeBottlesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +112,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543AABF1A0EF02DF9813E35B /* Pods_ShakeBottles_ShakeBottlesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041E8DF327EDC7280028C7CF /* NavControllers */ = {
+			isa = PBXGroup;
+			children = (
+				041E8DF127EDC6850028C7CF /* MeNavigationController.swift */,
+				041E8DF427EDC7570028C7CF /* BottlesNavigationController.swift */,
+				041E8DF627EDC7670028C7CF /* ShakeNavigationController.swift */,
+			);
+			path = NavControllers;
+			sourceTree = "<group>";
+		};
 		0474F9F827ECDA540079C939 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +136,8 @@
 				0474FA1A27ECDA550079C939 /* ShakeBottlesTests */,
 				0474FA2427ECDA550079C939 /* ShakeBottlesUITests */,
 				0474FA0227ECDA540079C939 /* Products */,
+				06AF92E940204860D6134772 /* Pods */,
+				1B2EDD07C696BFCDF6DADBD4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +154,7 @@
 		0474FA0327ECDA540079C939 /* ShakeBottles */ = {
 			isa = PBXGroup;
 			children = (
+				041E8DF327EDC7280028C7CF /* NavControllers */,
 				0474FA0427ECDA540079C939 /* AppDelegate.swift */,
 				0474FA0627ECDA540079C939 /* SceneDelegate.swift */,
 				0474FA0827ECDA540079C939 /* ViewController.swift */,
@@ -106,6 +162,9 @@
 				0474FA0D27ECDA550079C939 /* Assets.xcassets */,
 				0474FA0F27ECDA550079C939 /* LaunchScreen.storyboard */,
 				0474FA1227ECDA550079C939 /* Info.plist */,
+				685F3FFF4B413256D45C895D /* TabBarController */,
+				685F3B1208AD40D6FBCDE1C9 /* BaseClass */,
+				685F3BEF35C35A773C28B260 /* ViewControllers */,
 			);
 			path = ShakeBottles;
 			sourceTree = "<group>";
@@ -127,6 +186,61 @@
 			path = ShakeBottlesUITests;
 			sourceTree = "<group>";
 		};
+		06AF92E940204860D6134772 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35CB27624219CCF69B060171 /* Pods-ShakeBottles.debug.xcconfig */,
+				EDF1EE61AC424C9919118B33 /* Pods-ShakeBottles.release.xcconfig */,
+				EFA8BF96CEE344C7CE346C06 /* Pods-ShakeBottles-ShakeBottlesUITests.debug.xcconfig */,
+				CB3BF67125604C35C1BFA485 /* Pods-ShakeBottles-ShakeBottlesUITests.release.xcconfig */,
+				DC49E11C4C27F351082A391A /* Pods-ShakeBottlesTests.debug.xcconfig */,
+				F30BDE41A5D7960E441FF870 /* Pods-ShakeBottlesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1B2EDD07C696BFCDF6DADBD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D5CB30138BDB7AF589FA0E9 /* Pods_ShakeBottles.framework */,
+				9E63EEAFDBAEE7769E0EB393 /* Pods_ShakeBottles_ShakeBottlesUITests.framework */,
+				64822670690957EEFB699817 /* Pods_ShakeBottlesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		685F3B1208AD40D6FBCDE1C9 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				685F305574CDC0249065C2C0 /* BaseViewController.swift */,
+				685F3A011DCFC4F6F325F8EB /* BaseTabBarController.swift */,
+				685F3C46632B51F40B6217D5 /* BaseView.swift */,
+				685F325901187923415B6951 /* BaseImageView.swift */,
+				685F32A68103ADAC38DC0F03 /* BaseLabel.swift */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		685F3BEF35C35A773C28B260 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				685F3C62C2C5013E658FE302 /* ShakeViewController.swift */,
+				685F38C112CDD3D73877443E /* BottlesViewController.swift */,
+				685F326639905DEC179558F8 /* MeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		685F3FFF4B413256D45C895D /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				685F32D3F903EBF9D939E8FE /* MainTabBarController.swift */,
+				685F37594D4E8B19E32AC9C7 /* TabNavigationMenu.swift */,
+				685F344CE1EA2CA79B3BCE5E /* TabItem.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0474FA2B27ECDA550079C939 /* Build configuration list for PBXNativeTarget "ShakeBottles" */;
 			buildPhases = (
+				399E35EAB8399416AB371579 /* [CP] Check Pods Manifest.lock */,
 				0474F9FD27ECDA540079C939 /* Sources */,
 				0474F9FE27ECDA540079C939 /* Frameworks */,
 				0474F9FF27ECDA540079C939 /* Resources */,
+				2F8D3C4BB69C08E3B2E976F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0474FA2E27ECDA550079C939 /* Build configuration list for PBXNativeTarget "ShakeBottlesTests" */;
 			buildPhases = (
+				B331EB1373A0E32EE88B6774 /* [CP] Check Pods Manifest.lock */,
 				0474FA1327ECDA550079C939 /* Sources */,
 				0474FA1427ECDA550079C939 /* Frameworks */,
 				0474FA1527ECDA550079C939 /* Resources */,
@@ -169,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0474FA3127ECDA550079C939 /* Build configuration list for PBXNativeTarget "ShakeBottlesUITests" */;
 			buildPhases = (
+				1428D07D7879DED786C9DC7B /* [CP] Check Pods Manifest.lock */,
 				0474FA1D27ECDA550079C939 /* Sources */,
 				0474FA1E27ECDA550079C939 /* Frameworks */,
 				0474FA1F27ECDA550079C939 /* Resources */,
+				D51D5644437302D653787197 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +372,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1428D07D7879DED786C9DC7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShakeBottles-ShakeBottlesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F8D3C4BB69C08E3B2E976F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShakeBottles/Pods-ShakeBottles-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShakeBottles/Pods-ShakeBottles-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShakeBottles/Pods-ShakeBottles-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		399E35EAB8399416AB371579 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShakeBottles-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B331EB1373A0E32EE88B6774 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShakeBottlesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D51D5644437302D653787197 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShakeBottles-ShakeBottlesUITests/Pods-ShakeBottles-ShakeBottlesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShakeBottles-ShakeBottlesUITests/Pods-ShakeBottles-ShakeBottlesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShakeBottles-ShakeBottlesUITests/Pods-ShakeBottles-ShakeBottlesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0474F9FD27ECDA540079C939 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +482,21 @@
 			files = (
 				0474FA0927ECDA540079C939 /* ViewController.swift in Sources */,
 				0474FA0527ECDA540079C939 /* AppDelegate.swift in Sources */,
+				041E8DF527EDC7570028C7CF /* BottlesNavigationController.swift in Sources */,
 				0474FA0727ECDA540079C939 /* SceneDelegate.swift in Sources */,
+				685F358B5B7F3B4B55AE0E28 /* MainTabBarController.swift in Sources */,
+				685F354421BD6288AED186E4 /* TabNavigationMenu.swift in Sources */,
+				685F344952A131EFE5C8C49E /* BaseViewController.swift in Sources */,
+				685F34B2ED657298DA65C345 /* BaseTabBarController.swift in Sources */,
+				685F395318B46CA592FE0A5E /* BaseView.swift in Sources */,
+				685F3DDDB655A29AC1688D2E /* TabItem.swift in Sources */,
+				041E8DF227EDC6850028C7CF /* MeNavigationController.swift in Sources */,
+				685F3DC4BDBE5DC2D7D1950E /* ShakeViewController.swift in Sources */,
+				041E8DF727EDC7670028C7CF /* ShakeNavigationController.swift in Sources */,
+				685F39ABD055AEA055238CAE /* BottlesViewController.swift in Sources */,
+				685F3F344423DE68D47E8C7D /* MeViewController.swift in Sources */,
+				685F39921E8859EF704CDC52 /* BaseImageView.swift in Sources */,
+				685F3F4FC5F6A28AB0C4AD1C /* BaseLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +670,7 @@
 		};
 		0474FA2C27ECDA550079C939 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35CB27624219CCF69B060171 /* Pods-ShakeBottles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -445,8 +682,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +701,7 @@
 		};
 		0474FA2D27ECDA550079C939 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDF1EE61AC424C9919118B33 /* Pods-ShakeBottles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,8 +713,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,6 +732,7 @@
 		};
 		0474FA2F27ECDA550079C939 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC49E11C4C27F351082A391A /* Pods-ShakeBottlesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +753,7 @@
 		};
 		0474FA3027ECDA550079C939 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F30BDE41A5D7960E441FF870 /* Pods-ShakeBottlesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +774,7 @@
 		};
 		0474FA3227ECDA550079C939 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFA8BF96CEE344C7CE346C06 /* Pods-ShakeBottles-ShakeBottlesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +793,7 @@
 		};
 		0474FA3327ECDA550079C939 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB3BF67125604C35C1BFA485 /* Pods-ShakeBottles-ShakeBottlesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

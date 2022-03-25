@@ -1,0 +1,6 @@
+framework module Pods_ShakeBottles {
+  umbrella header "Pods-ShakeBottles-umbrella.h"
+
+  export *
+  module * { export * }
+}
