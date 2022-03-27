@@ -26,7 +26,7 @@ class MainTabBarController: BaseTabBarController {
             self.viewControllers = controllers
         }
         // default selected
-        selectedIndex = 0
+        selectedIndex = 2
     }
 
     private func setupCustomTabBar(_ items: [TabItem], completion: @escaping ([UIViewController]) -> Void) {
@@ -119,7 +119,7 @@ class MyTransition: NSObject, UIViewControllerAnimatedTransitioning {
     }
 
     func getIndex(forViewController vc: UIViewController) -> Int? {
-        guard let vcs = self.viewControllers else { return nil }
+        guard let vcs = viewControllers else { return nil }
         for (index, thisVC) in vcs.enumerated() {
             if thisVC == vc { return index }
         }

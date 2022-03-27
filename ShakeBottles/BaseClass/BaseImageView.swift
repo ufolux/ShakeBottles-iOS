@@ -18,7 +18,7 @@ class BaseImageView: UIImageView {
 
     func setup() {
         backgroundColor = UIColor.clear
-        contentMode = .scaleAspectFill
+        contentMode = .scaleAspectFit
         clipsToBounds = true
     }
 }

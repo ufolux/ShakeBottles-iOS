@@ -8,6 +8,7 @@ target 'ShakeBottles' do
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'
   pod 'SwiftIconFont', '6.2.0'
+  pod 'RxDataSources', '5.0'
 
   # Pods for ShakeBottles
 

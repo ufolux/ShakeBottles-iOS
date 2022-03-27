@@ -20,8 +20,6 @@ class TabNavigationMenu: BaseView {
 
     convenience init(menuItems: [TabItem], frame: CGRect) {
         self.init(frame: frame)
-        print(frame)
-//        image = UIImage(named: "BottleIcon")
         backgroundColor = UIColor.darkGray
         isUserInteractionEnabled = true
         clipsToBounds = true

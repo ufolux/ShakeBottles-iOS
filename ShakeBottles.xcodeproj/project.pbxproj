@@ -10,6 +10,14 @@
 		041E8DF227EDC6850028C7CF /* MeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8DF127EDC6850028C7CF /* MeNavigationController.swift */; };
 		041E8DF527EDC7570028C7CF /* BottlesNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8DF427EDC7570028C7CF /* BottlesNavigationController.swift */; };
 		041E8DF727EDC7670028C7CF /* ShakeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8DF627EDC7670028C7CF /* ShakeNavigationController.swift */; };
+		041E8DFF27EF8E390028C7CF /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8DFE27EF8E390028C7CF /* MeView.swift */; };
+		041E8E0327EF99970028C7CF /* AvatarTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E0227EF99970028C7CF /* AvatarTopView.swift */; };
+		041E8E0827EFA2D90028C7CF /* UIUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E0727EFA2D90028C7CF /* UIUtil.swift */; };
+		041E8E0B27EFFED40028C7CF /* ShakeBottles+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E0A27EFFED40028C7CF /* ShakeBottles+UIImageView.swift */; };
+		041E8E0F27F00BD00028C7CF /* MeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E0E27F00BD00028C7CF /* MeVM.swift */; };
+		041E8E1227F0331B0028C7CF /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E1127F0331B0028C7CF /* BaseViewModel.swift */; };
+		041E8E1427F035690028C7CF /* MeTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E1327F035690028C7CF /* MeTableViewDataSource.swift */; };
+		041E8E1627F03CF20028C7CF /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E1527F03CF20028C7CF /* UserInfo.swift */; };
 		0474FA0527ECDA540079C939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474FA0427ECDA540079C939 /* AppDelegate.swift */; };
 		0474FA0727ECDA540079C939 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474FA0627ECDA540079C939 /* SceneDelegate.swift */; };
 		0474FA0927ECDA540079C939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474FA0827ECDA540079C939 /* ViewController.swift */; };
@@ -56,6 +64,14 @@
 		041E8DF127EDC6850028C7CF /* MeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeNavigationController.swift; sourceTree = "<group>"; };
 		041E8DF427EDC7570028C7CF /* BottlesNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottlesNavigationController.swift; sourceTree = "<group>"; };
 		041E8DF627EDC7670028C7CF /* ShakeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeNavigationController.swift; sourceTree = "<group>"; };
+		041E8DFE27EF8E390028C7CF /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		041E8E0227EF99970028C7CF /* AvatarTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarTopView.swift; sourceTree = "<group>"; };
+		041E8E0727EFA2D90028C7CF /* UIUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtil.swift; sourceTree = "<group>"; };
+		041E8E0A27EFFED40028C7CF /* ShakeBottles+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShakeBottles+UIImageView.swift"; sourceTree = "<group>"; };
+		041E8E0E27F00BD00028C7CF /* MeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVM.swift; sourceTree = "<group>"; };
+		041E8E1127F0331B0028C7CF /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		041E8E1327F035690028C7CF /* MeTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeTableViewDataSource.swift; sourceTree = "<group>"; };
+		041E8E1527F03CF20028C7CF /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		0474FA0127ECDA540079C939 /* ShakeBottles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShakeBottles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0474FA0427ECDA540079C939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0474FA0627ECDA540079C939 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +145,73 @@
 			path = NavControllers;
 			sourceTree = "<group>";
 		};
+		041E8DF927EF89D30028C7CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		041E8DFA27EF89DE0028C7CF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				041E8E0727EFA2D90028C7CF /* UIUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		041E8DFD27EF8E1C0028C7CF /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		041E8E0027EF92080028C7CF /* TabNavigationMenu */ = {
+			isa = PBXGroup;
+			children = (
+				685F37594D4E8B19E32AC9C7 /* TabNavigationMenu.swift */,
+				685F344CE1EA2CA79B3BCE5E /* TabItem.swift */,
+			);
+			path = TabNavigationMenu;
+			sourceTree = "<group>";
+		};
+		041E8E0427EF9C6D0028C7CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				041E8E0A27EFFED40028C7CF /* ShakeBottles+UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		041E8E0C27F00B4B0028C7CF /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				041E8E0D27F00B570028C7CF /* MeViewController */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		041E8E0D27F00B570028C7CF /* MeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				041E8DFE27EF8E390028C7CF /* MeView.swift */,
+				041E8E0227EF99970028C7CF /* AvatarTopView.swift */,
+				685F326639905DEC179558F8 /* MeViewController.swift */,
+				041E8E0E27F00BD00028C7CF /* MeVM.swift */,
+				041E8E1327F035690028C7CF /* MeTableViewDataSource.swift */,
+			);
+			path = MeViewController;
+			sourceTree = "<group>";
+		};
+		041E8E1027F00C770028C7CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				041E8E1527F03CF20028C7CF /* UserInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0474F9F827ECDA540079C939 = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +237,13 @@
 		0474FA0327ECDA540079C939 /* ShakeBottles */ = {
 			isa = PBXGroup;
 			children = (
-				041E8DF327EDC7280028C7CF /* NavControllers */,
+				041E8E0427EF9C6D0028C7CF /* Extensions */,
+				041E8DFD27EF8E1C0028C7CF /* CommonViews */,
+				041E8DFA27EF89DE0028C7CF /* Utils */,
+				041E8DF927EF89D30028C7CF /* Services */,
+				685F3B1208AD40D6FBCDE1C9 /* BaseClass */,
+				041E8E1027F00C770028C7CF /* Models */,
+				685F3BEF35C35A773C28B260 /* ViewControllers+VMs */,
 				0474FA0427ECDA540079C939 /* AppDelegate.swift */,
 				0474FA0627ECDA540079C939 /* SceneDelegate.swift */,
 				0474FA0827ECDA540079C939 /* ViewController.swift */,
@@ -162,9 +251,6 @@
 				0474FA0D27ECDA550079C939 /* Assets.xcassets */,
 				0474FA0F27ECDA550079C939 /* LaunchScreen.storyboard */,
 				0474FA1227ECDA550079C939 /* Info.plist */,
-				685F3FFF4B413256D45C895D /* TabBarController */,
-				685F3B1208AD40D6FBCDE1C9 /* BaseClass */,
-				685F3BEF35C35A773C28B260 /* ViewControllers */,
 			);
 			path = ShakeBottles;
 			sourceTree = "<group>";
@@ -217,26 +303,28 @@
 				685F3C46632B51F40B6217D5 /* BaseView.swift */,
 				685F325901187923415B6951 /* BaseImageView.swift */,
 				685F32A68103ADAC38DC0F03 /* BaseLabel.swift */,
+				041E8E1127F0331B0028C7CF /* BaseViewModel.swift */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
 		};
-		685F3BEF35C35A773C28B260 /* ViewControllers */ = {
+		685F3BEF35C35A773C28B260 /* ViewControllers+VMs */ = {
 			isa = PBXGroup;
 			children = (
+				041E8E0C27F00B4B0028C7CF /* Me */,
+				041E8DF327EDC7280028C7CF /* NavControllers */,
+				685F3FFF4B413256D45C895D /* TabBarController */,
 				685F3C62C2C5013E658FE302 /* ShakeViewController.swift */,
 				685F38C112CDD3D73877443E /* BottlesViewController.swift */,
-				685F326639905DEC179558F8 /* MeViewController.swift */,
 			);
-			path = ViewControllers;
+			path = "ViewControllers+VMs";
 			sourceTree = "<group>";
 		};
 		685F3FFF4B413256D45C895D /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				041E8E0027EF92080028C7CF /* TabNavigationMenu */,
 				685F32D3F903EBF9D939E8FE /* MainTabBarController.swift */,
-				685F37594D4E8B19E32AC9C7 /* TabNavigationMenu.swift */,
-				685F344CE1EA2CA79B3BCE5E /* TabItem.swift */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -483,19 +571,27 @@
 				0474FA0927ECDA540079C939 /* ViewController.swift in Sources */,
 				0474FA0527ECDA540079C939 /* AppDelegate.swift in Sources */,
 				041E8DF527EDC7570028C7CF /* BottlesNavigationController.swift in Sources */,
+				041E8E1627F03CF20028C7CF /* UserInfo.swift in Sources */,
+				041E8E0827EFA2D90028C7CF /* UIUtil.swift in Sources */,
 				0474FA0727ECDA540079C939 /* SceneDelegate.swift in Sources */,
 				685F358B5B7F3B4B55AE0E28 /* MainTabBarController.swift in Sources */,
+				041E8E0F27F00BD00028C7CF /* MeVM.swift in Sources */,
 				685F354421BD6288AED186E4 /* TabNavigationMenu.swift in Sources */,
+				041E8DFF27EF8E390028C7CF /* MeView.swift in Sources */,
+				041E8E0B27EFFED40028C7CF /* ShakeBottles+UIImageView.swift in Sources */,
 				685F344952A131EFE5C8C49E /* BaseViewController.swift in Sources */,
 				685F34B2ED657298DA65C345 /* BaseTabBarController.swift in Sources */,
 				685F395318B46CA592FE0A5E /* BaseView.swift in Sources */,
 				685F3DDDB655A29AC1688D2E /* TabItem.swift in Sources */,
+				041E8E1227F0331B0028C7CF /* BaseViewModel.swift in Sources */,
+				041E8E0327EF99970028C7CF /* AvatarTopView.swift in Sources */,
 				041E8DF227EDC6850028C7CF /* MeNavigationController.swift in Sources */,
 				685F3DC4BDBE5DC2D7D1950E /* ShakeViewController.swift in Sources */,
 				041E8DF727EDC7670028C7CF /* ShakeNavigationController.swift in Sources */,
 				685F39ABD055AEA055238CAE /* BottlesViewController.swift in Sources */,
 				685F3F344423DE68D47E8C7D /* MeViewController.swift in Sources */,
 				685F39921E8859EF704CDC52 /* BaseImageView.swift in Sources */,
+				041E8E1427F035690028C7CF /* MeTableViewDataSource.swift in Sources */,
 				685F3F4FC5F6A28AB0C4AD1C /* BaseLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

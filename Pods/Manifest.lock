@@ -1,7 +1,12 @@
 PODS:
+  - Differentiator (5.0.0)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
@@ -10,25 +15,30 @@ PODS:
 
 DEPENDENCIES:
   - RxCocoa (= 6.5.0)
+  - RxDataSources (= 5.0)
   - RxSwift (= 6.5.0)
   - SnapKit (= 5.0.0)
   - SwiftIconFont (= 6.2.0)
 
 SPEC REPOS:
   trunk:
+    - Differentiator
     - RxCocoa
+    - RxDataSources
     - RxRelay
     - RxSwift
     - SnapKit
     - SwiftIconFont
 
 SPEC CHECKSUMS:
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   SwiftIconFont: aa5bbb9b8b8765eeec4f447e90c4c307e2cff7e8
 
-PODFILE CHECKSUM: 0d2d678d9a336fcda372f8c8c656e2bb926a319e
+PODFILE CHECKSUM: 4d3083215c4f7a00bfcae5ca54b653f6b0415059
 
 COCOAPODS: 1.11.2
