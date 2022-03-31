@@ -12,7 +12,7 @@ import SwiftIconFont
 
 final class AvatarTopView: BaseView {
     // private
-    private let placeholderAvatar: UIImage =  UIImage(from: .fontAwesome5, code: "user", textColor: .gray, backgroundColor: .lightGray, size: CGSize(width: 88, height: 88))
+    private let placeholderAvatar: UIImage =  UIImage(from: .fontAwesome5Solid, code: "user", textColor: .white, backgroundColor: .clear, size: CGSize(width: 88, height: 88))
     private var avatarImgV: UIImageView!
     private var nameLbl: UILabel!
     private var phoneNumLbl: UILabel!
@@ -41,13 +41,14 @@ final class AvatarTopView: BaseView {
     init(vm: MeVM) {
         super.init(frame: .zero)
         self.vm = vm
-
+        self.backgroundColor = .clear
+        
         // avatar
         avatarImgV = UIImageView()
         avatarImgV.layer.cornerRadius = 44
         avatarImgV.layer.masksToBounds = true
         avatarImgV.image = placeholderAvatar
-        avatarImgV.backgroundColor = .lightGray
+        avatarImgV.backgroundColor = UIColor(rgb: 0x9bdefe)
         self.addSubview(avatarImgV)
         avatarImgV.snp.makeConstraints { make in
             make.centerX.equalTo(self.snp.centerX)
@@ -89,7 +90,7 @@ final class AvatarTopView: BaseView {
         
     }
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

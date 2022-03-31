@@ -35,7 +35,6 @@ class TabNavigationMenu: BaseView {
             itemView.snp.makeConstraints { make in
                 make.height.equalTo(self.snp.height)
                 make.width.equalTo(itemWidth)
-                
                 make.leading.equalTo(self.snp.leading).offset(leadingAnchor)
                 make.top.equalTo(self.snp.top)
             }

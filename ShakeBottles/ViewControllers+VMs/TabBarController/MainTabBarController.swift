@@ -26,7 +26,7 @@ class MainTabBarController: BaseTabBarController {
             self.viewControllers = controllers
         }
         // default selected
-        selectedIndex = 2
+        selectedIndex = 1
     }
 
     private func setupCustomTabBar(_ items: [TabItem], completion: @escaping ([UIViewController]) -> Void) {

@@ -18,6 +18,9 @@ final class MeView: BaseView, UITableViewDelegate {
     init(vm: MeVM) {
         super.init(frame: .zero)
         self.vm = vm
+        self.backgroundColor = AppearanceManager.sharedInstance.currentTheme.background
+        
+        // avatar top view
         avatarTopView = AvatarTopView(vm: vm)
         self.addSubview(avatarTopView)
         avatarTopView.snp.makeConstraints { make in
@@ -29,6 +32,7 @@ final class MeView: BaseView, UITableViewDelegate {
         
         // init table view and constraints
         tableView = UITableView()
+        tableView.backgroundColor = .clear
         tvDelegate = MeTableViewDelegate(vm: vm)
         tableView.dataSource = tvDelegate
         tableView.delegate = tvDelegate
@@ -41,7 +45,7 @@ final class MeView: BaseView, UITableViewDelegate {
         }
     }
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

@@ -1,5 +1,5 @@
 //
-//  UIImage+ShakeBottles.swift
+//  ShakeBottles+UIImage.swift
 //  ShakeBottles
 //
 //  Created by Sines on 3/26/22.

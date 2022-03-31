@@ -15,8 +15,6 @@ class MeNavigationController: UINavigationController {
     
     override init(rootViewController: UIViewController) {
         super.init(rootViewController: rootViewController)
-        let textAttr = [NSAttributedString.Key.foregroundColor:UIColor.black]
-        self.navigationBar.titleTextAttributes = textAttr
     }
     
     override func viewWillAppear(_ animated: Bool) {

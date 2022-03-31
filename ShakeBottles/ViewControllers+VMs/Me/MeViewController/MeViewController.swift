@@ -7,10 +7,10 @@ import UIKit
 import SnapKit
 
 final class MeViewController: UIViewController {
-    let meVM = MeVM()
+    private let vm = MeVM()
     
     override func loadView() {
-        view = MeView(vm: meVM)
+        view = MeView(vm: vm)
     }
     
     override func viewDidLoad() {
