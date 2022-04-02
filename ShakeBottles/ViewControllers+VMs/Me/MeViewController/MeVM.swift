@@ -20,10 +20,10 @@ struct SettingsCellModel {
 
 final class MeVM: BaseViewModel {
     let settingsTableViewArray: Array<SettingsCellModel> = [
-        SettingsCellModel(icon: "palette", title: "Appearance", color: UIColor(rgb: 0x2faae1)),
-        SettingsCellModel(icon: "globe-americas", title: "Language", color: UIColor(rgb: 0xab53dc), rightText: "English"),
-        SettingsCellModel(icon: "server", title: "Data and Storage", color: UIColor(rgb: 0x29cb58)),
-        SettingsCellModel(icon: "coins", title: "Credit", color: UIColor(rgb: 0xfa940b)),
-        SettingsCellModel(icon: "lightbulb", title: "About ShakeBottles", color: UIColor(rgb: 0xf7cf05)),
+        SettingsCellModel(icon: "palette", title: "Appearance", color: UIColor(0x2faae1)),
+        SettingsCellModel(icon: "globe-americas", title: "Language", color: UIColor(0xab53dc), rightText: "English"),
+        SettingsCellModel(icon: "server", title: "Data and Storage", color: UIColor(0x29cb58)),
+        SettingsCellModel(icon: "coins", title: "Credit", color: UIColor(0xfa940b)),
+        SettingsCellModel(icon: "lightbulb", title: "About ShakeBottles", color: UIColor(0xf7cf05)),
     ]
 }

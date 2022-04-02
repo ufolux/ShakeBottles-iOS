@@ -12,7 +12,7 @@ import SnapKit
 class MainTabBarController: BaseTabBarController {
     var customTabBar: TabNavigationMenu!
     var tabBarHeight: CGFloat = 67.0 + UIApplication.shared.windows.first!.safeAreaInsets.bottom
-
+    let defaultIndex = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +22,13 @@ class MainTabBarController: BaseTabBarController {
 
     private func loadTabBar() {
         let tabItems: [TabItem] = [.shake, .bottles, .me]
+        
         setupCustomTabBar(tabItems) { (controllers) in
             self.viewControllers = controllers
         }
+        
         // default selected
-        selectedIndex = 1
+        selectedIndex = defaultIndex
     }
 
     private func setupCustomTabBar(_ items: [TabItem], completion: @escaping ([UIViewController]) -> Void) {
@@ -36,7 +38,7 @@ class MainTabBarController: BaseTabBarController {
         // hide the tab bar
         tabBar.isHidden = true
 
-        customTabBar = TabNavigationMenu(menuItems: items, frame: frame)
+        customTabBar = TabNavigationMenu(menuItems: items, frame: frame, defaultIndex: defaultIndex)
         customTabBar.backgroundColor = UIColor.white
         customTabBar.translatesAutoresizingMaskIntoConstraints = false
         customTabBar.clipsToBounds = true

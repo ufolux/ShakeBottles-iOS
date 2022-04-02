@@ -48,7 +48,7 @@ final class AvatarTopView: BaseView {
         avatarImgV.layer.cornerRadius = 44
         avatarImgV.layer.masksToBounds = true
         avatarImgV.image = placeholderAvatar
-        avatarImgV.backgroundColor = UIColor(rgb: 0x9bdefe)
+        avatarImgV.backgroundColor = UIColor(0x9bdefe)
         self.addSubview(avatarImgV)
         avatarImgV.snp.makeConstraints { make in
             make.centerX.equalTo(self.snp.centerX)

@@ -14,6 +14,6 @@ protocol ShakeBottlesTheme {
 
 extension UIColor {
     struct DefaultTheme: ShakeBottlesTheme {
-        var background: UIColor = UIColor(rgb: 0xf6f6f6)
+        var background: UIColor = UIColor(0xf6f6f6)
     }
 }

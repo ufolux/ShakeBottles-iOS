@@ -27,29 +27,36 @@ class BottlesView: BaseView {
         self.addSubview(btnsStackV)
         
         btnsStackV.axis = .horizontal
-        btnsStackV.spacing = 80
+        btnsStackV.spacing = 60
         btnsStackV.snp.makeConstraints { make in
             make.bottom.equalTo(self.snp.bottom).offset(-64)
             make.centerX.equalTo(self.snp.centerX)
         }
         
-        pickBottleBtn.backgroundColor = .brown
-        pickBottleBtn.layer.cornerRadius = 40
-        pickBottleBtn.setTitle("Pick", for: .normal)
+        let btnWidth = 120.0
+        let btnBgc: UInt = 0xFFF3C960
+        pickBottleBtn.layer.cornerRadius = btnWidth / 2
+        pickBottleBtn.backgroundColor = UIColor(btnBgc)
+        pickBottleBtn.setImage(UIImage(named: "NetImage"), for: .normal)
+        pickBottleBtn.imageView?.contentMode = .scaleAspectFit
+        pickBottleBtn.imageEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        pickBottleBtn.showsTouchWhenHighlighted = true
         pickBottleBtn.addTarget(self, action: #selector(pickBottleBtnClicked), for: .touchUpInside)
         pickBottleBtn.snp.makeConstraints { make in
-            make.height.equalTo(80)
-            make.width.equalTo(80)
+            make.height.equalTo(btnWidth)
+            make.width.equalTo(btnWidth)
         }
         
-        throwBottleBtn.frame = .init(x: 0, y: 0, width: 80, height: 80)
-        throwBottleBtn.backgroundColor = .cyan
-        throwBottleBtn.layer.cornerRadius = 40
-        throwBottleBtn.setTitle("Throw", for: .normal)
+        throwBottleBtn.layer.cornerRadius = btnWidth / 2
+        throwBottleBtn.backgroundColor = UIColor(btnBgc)
+        throwBottleBtn.layer.setAffineTransform(CGAffineTransform.init(rotationAngle: .pi/4))
+        throwBottleBtn.setImage(UIImage(named: "Bottle"), for: .normal)
+        throwBottleBtn.imageView?.contentMode = .scaleAspectFit
+        throwBottleBtn.showsTouchWhenHighlighted = true
         throwBottleBtn.addTarget(self, action: #selector(throwBottleBtnClicked), for: .touchUpInside)
         throwBottleBtn.snp.makeConstraints { make in
-            make.height.equalTo(80)
-            make.width.equalTo(80)
+            make.height.equalTo(btnWidth)
+            make.width.equalTo(btnWidth)
         }
         
         // sea
@@ -57,10 +64,11 @@ class BottlesView: BaseView {
         self.addSubview(bottleSeaV)
         bottleSeaV.layer.zPosition = btnsStackV.layer.zPosition - 1
         bottleSeaV.snp.makeConstraints { make in
-            make.bottomMargin.equalTo(0)
-            make.leadingMargin.equalTo(0)
-            make.trailingMargin.equalTo(0)
-            make.topMargin.equalTo(0)
+            make.centerX.equalTo(self.snp.centerX)
+            make.bottom.equalTo(self.snp.bottomMargin).offset(-24)
+            make.leading.equalTo(self.snp.leading)
+            make.trailing.equalTo(self.snp.trailing)
+            make.top.equalTo(self.snp.top)
         }
     }
     

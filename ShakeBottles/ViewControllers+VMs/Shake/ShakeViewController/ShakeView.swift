@@ -14,6 +14,7 @@ class ShakeView: BaseView, AVAudioPlayerDelegate {
     private var vm: ShakeVM!
     private let shakeImgVLeft = UIImageView()
     private let shakeImgVRight = UIImageView()
+    private var imgStackV: UIStackView!
     private let shakeSoundPath = Bundle.main.path(forResource: "ShakeKacha", ofType: "mp3")!
     private var shakeSoundData: Data!
     private var player: AVAudioPlayer?
@@ -23,23 +24,30 @@ class ShakeView: BaseView, AVAudioPlayerDelegate {
         self.vm = vm
         self.backgroundColor = AppearanceManager.sharedInstance.currentTheme.background
         
-        self.addSubview(shakeImgVLeft)
-        shakeImgVLeft.image = UIImage(named: "shakeIconLeft")
+        // images
+        let imageH = 130.0, imageW = imageH / 2
+        shakeImgVLeft.image = UIImage(named: "ShakeIconLeft")
+        shakeImgVLeft.contentMode = .scaleToFill
+        shakeImgVRight.image = UIImage(named: "ShakeIconRight")
+        shakeImgVRight.contentMode = .scaleToFill
+        
+        imgStackV = UIStackView(arrangedSubviews: [shakeImgVLeft, shakeImgVRight])
+        imgStackV.axis = .horizontal
+        self.addSubview(imgStackV)
         shakeImgVLeft.snp.makeConstraints { make in
-            make.height.equalTo(100)
-            make.width.equalTo(50)
-            make.centerX.equalTo(self.snp.centerX).offset(-50/2)
-            make.centerY.equalTo(self.snp.centerY).offset(-64)
+            make.height.equalTo(imageH)
+            make.width.equalTo(imageW)
         }
-        self.addSubview(shakeImgVRight)
-        shakeImgVRight.image = UIImage(named: "shakeIconRight")
         shakeImgVRight.snp.makeConstraints { make in
-            make.height.equalTo(100)
-            make.width.equalTo(50)
-            make.centerX.equalTo(self.snp.centerX).offset(50/2)
+            make.height.equalTo(imageH)
+            make.width.equalTo(imageW)
+        }
+        imgStackV.snp.makeConstraints { make in
+            make.centerX.equalTo(self.snp.centerX)
             make.centerY.equalTo(self.snp.centerY).offset(-64)
         }
         
+        // lable
         let instruction = UILabel()
         self.addSubview(instruction)
         instruction.text = "Meet someone who shakes the phone at the same time with you!"
@@ -49,7 +57,7 @@ class ShakeView: BaseView, AVAudioPlayerDelegate {
         instruction.textColor = .gray
         instruction.snp.makeConstraints { make in
             make.centerX.equalTo(self.snp.centerX)
-            make.top.equalTo(shakeImgVLeft.snp.bottom).offset(8)
+            make.top.equalTo(imgStackV.snp.bottom).offset(8)
             make.leading.equalTo(self.snp.leading).offset(32)
             make.trailing.equalTo(self.snp.trailing).offset(-32)
         }
@@ -63,15 +71,15 @@ class ShakeView: BaseView, AVAudioPlayerDelegate {
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if event?.subtype == .motionShake {
             UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn) {
-                self.shakeImgVLeft.frame.origin.x -= 16
-                self.shakeImgVRight.frame.origin.x += 16
+                self.shakeImgVLeft.frame.origin.x -= 32
+                self.shakeImgVRight.frame.origin.x += 32
             }
             
             playShakeSound()
             
             UIView.animate(withDuration: 0.3, delay: 0.7, options: .curveEaseIn) {
-                self.shakeImgVLeft.frame.origin.x += 16
-                self.shakeImgVRight.frame.origin.x -= 16
+                self.shakeImgVLeft.frame.origin.x += 32
+                self.shakeImgVRight.frame.origin.x -= 32
             }
         }
     }

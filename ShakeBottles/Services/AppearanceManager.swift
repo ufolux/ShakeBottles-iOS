@@ -13,5 +13,5 @@ import UIKit
 class AppearanceManager {
     static let sharedInstance = AppearanceManager()
     
-    var currentTheme: ShakeBottlesTheme = UIColor.DefaultTheme()
+    let currentTheme: ShakeBottlesTheme = UIColor.DefaultTheme()
 }

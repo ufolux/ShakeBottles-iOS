@@ -18,7 +18,7 @@ class TabNavigationMenu: BaseView {
         super.init(coder: aDecoder)
     }
 
-    convenience init(menuItems: [TabItem], frame: CGRect) {
+    convenience init(menuItems: [TabItem], frame: CGRect, defaultIndex: Int = 0) {
         self.init(frame: frame)
         backgroundColor = UIColor.darkGray
         isUserInteractionEnabled = true
@@ -41,7 +41,7 @@ class TabNavigationMenu: BaseView {
         }
         setNeedsLayout()
         layoutIfNeeded()
-        activateTab(tab: 0)
+        activateTab(tab: defaultIndex)
     }
 
     func createTabItem(item: TabItem) -> UIView {
