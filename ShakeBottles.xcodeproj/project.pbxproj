@@ -39,6 +39,17 @@
 		04FB498D27F56BFB0078262C /* FindSomeone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04FB498C27F56BFB0078262C /* FindSomeone.mp3 */; };
 		04FB498F27F56C0E0078262C /* ShakeKacha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04FB498E27F56C0E0078262C /* ShakeKacha.mp3 */; };
 		04FB499127F639890078262C /* BottleSeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB499027F639890078262C /* BottleSeaView.swift */; };
+		04FB499627FA30710078262C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB499527FA30710078262C /* Coordinator.swift */; };
+		04FB499827FA9A520078262C /* ShakeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB499727FA9A520078262C /* ShakeCoordinator.swift */; };
+		04FB499A27FAA3300078262C /* BottlesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB499927FAA3300078262C /* BottlesCoordinator.swift */; };
+		04FB499C27FAA3390078262C /* MeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB499B27FAA3390078262C /* MeCoordinator.swift */; };
+		04FB499E27FC09B00078262C /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB499D27FC09B00078262C /* MainCoordinator.swift */; };
+		04FB49A027FC0BF30078262C /* MainBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB499F27FC0BF30078262C /* MainBaseCoordinator.swift */; };
+		04FB49A527FC10BB0078262C /* DeepLinkBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49A427FC10BB0078262C /* DeepLinkBaseCoordinator.swift */; };
+		04FB49A727FC10FC0078262C /* DeepLinkCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49A627FC10FC0078262C /* DeepLinkCoordinator.swift */; };
+		04FB49A927FCC28F0078262C /* BottlesBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49A827FCC28F0078262C /* BottlesBaseCoordinator.swift */; };
+		04FB49AB27FCC3A60078262C /* ShakeBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49AA27FCC3A60078262C /* ShakeBaseCoordinator.swift */; };
+		04FB49AD27FCC3DE0078262C /* MeBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49AC27FCC3DE0078262C /* MeBaseCoordinator.swift */; };
 		1CBCE6E3E1709591667B5C97 /* Pods_ShakeBottles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5CB30138BDB7AF589FA0E9 /* Pods_ShakeBottles.framework */; };
 		543AABF1A0EF02DF9813E35B /* Pods_ShakeBottles_ShakeBottlesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E63EEAFDBAEE7769E0EB393 /* Pods_ShakeBottles_ShakeBottlesUITests.framework */; };
 		66927E2C35D228AE905264FF /* Pods_ShakeBottlesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64822670690957EEFB699817 /* Pods_ShakeBottlesTests.framework */; };
@@ -108,6 +119,17 @@
 		04FB498C27F56BFB0078262C /* FindSomeone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FindSomeone.mp3; sourceTree = "<group>"; };
 		04FB498E27F56C0E0078262C /* ShakeKacha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ShakeKacha.mp3; sourceTree = "<group>"; };
 		04FB499027F639890078262C /* BottleSeaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleSeaView.swift; sourceTree = "<group>"; };
+		04FB499527FA30710078262C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		04FB499727FA9A520078262C /* ShakeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeCoordinator.swift; sourceTree = "<group>"; };
+		04FB499927FAA3300078262C /* BottlesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottlesCoordinator.swift; sourceTree = "<group>"; };
+		04FB499B27FAA3390078262C /* MeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeCoordinator.swift; sourceTree = "<group>"; };
+		04FB499D27FC09B00078262C /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		04FB499F27FC0BF30078262C /* MainBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBaseCoordinator.swift; sourceTree = "<group>"; };
+		04FB49A427FC10BB0078262C /* DeepLinkBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkBaseCoordinator.swift; sourceTree = "<group>"; };
+		04FB49A627FC10FC0078262C /* DeepLinkCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkCoordinator.swift; sourceTree = "<group>"; };
+		04FB49A827FCC28F0078262C /* BottlesBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottlesBaseCoordinator.swift; sourceTree = "<group>"; };
+		04FB49AA27FCC3A60078262C /* ShakeBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeBaseCoordinator.swift; sourceTree = "<group>"; };
+		04FB49AC27FCC3DE0078262C /* MeBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeBaseCoordinator.swift; sourceTree = "<group>"; };
 		0D5CB30138BDB7AF589FA0E9 /* Pods_ShakeBottles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShakeBottles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CB27624219CCF69B060171 /* Pods-ShakeBottles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakeBottles.debug.xcconfig"; path = "Target Support Files/Pods-ShakeBottles/Pods-ShakeBottles.debug.xcconfig"; sourceTree = "<group>"; };
 		64822670690957EEFB699817 /* Pods_ShakeBottlesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShakeBottlesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +234,7 @@
 		041E8E0C27F00B4B0028C7CF /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				04FB49A227FC0EB50078262C /* Coordinators */,
 				041E8E0D27F00B570028C7CF /* MeViewController */,
 			);
 			path = Me;
@@ -263,6 +286,7 @@
 		0474FA0327ECDA540079C939 /* ShakeBottles */ = {
 			isa = PBXGroup;
 			children = (
+				04FB499227FA302A0078262C /* Coordinators */,
 				04FB498B27F56BE50078262C /* AudioRes */,
 				041E8E0427EF9C6D0028C7CF /* Extensions */,
 				041E8DFD27EF8E1C0028C7CF /* CommonViews */,
@@ -302,6 +326,7 @@
 		04FB497827F17CC00078262C /* Shake */ = {
 			isa = PBXGroup;
 			children = (
+				04FB49A327FC0ED20078262C /* Coordinators */,
 				04FB497B27F17D000078262C /* ShakeViewController */,
 			);
 			path = Shake;
@@ -320,6 +345,7 @@
 		04FB497E27F18AA60078262C /* Bottles */ = {
 			isa = PBXGroup;
 			children = (
+				04FB49A127FC0EA70078262C /* Coordinators */,
 				04FB498027F18AB80078262C /* BottlesViewController */,
 			);
 			path = Bottles;
@@ -343,6 +369,45 @@
 				04FB498C27F56BFB0078262C /* FindSomeone.mp3 */,
 			);
 			path = AudioRes;
+			sourceTree = "<group>";
+		};
+		04FB499227FA302A0078262C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				04FB499527FA30710078262C /* Coordinator.swift */,
+				04FB499D27FC09B00078262C /* MainCoordinator.swift */,
+				04FB499F27FC0BF30078262C /* MainBaseCoordinator.swift */,
+				04FB49A427FC10BB0078262C /* DeepLinkBaseCoordinator.swift */,
+				04FB49A627FC10FC0078262C /* DeepLinkCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		04FB49A127FC0EA70078262C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				04FB499927FAA3300078262C /* BottlesCoordinator.swift */,
+				04FB49A827FCC28F0078262C /* BottlesBaseCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		04FB49A227FC0EB50078262C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				04FB499B27FAA3390078262C /* MeCoordinator.swift */,
+				04FB49AC27FCC3DE0078262C /* MeBaseCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		04FB49A327FC0ED20078262C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				04FB499727FA9A520078262C /* ShakeCoordinator.swift */,
+				04FB49AA27FCC3A60078262C /* ShakeBaseCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		06AF92E940204860D6134772 /* Pods */ = {
@@ -653,8 +718,11 @@
 				041E8E0F27F00BD00028C7CF /* MeVM.swift in Sources */,
 				685F354421BD6288AED186E4 /* TabNavigationMenu.swift in Sources */,
 				041E8DFF27EF8E390028C7CF /* MeView.swift in Sources */,
+				04FB499E27FC09B00078262C /* MainCoordinator.swift in Sources */,
+				04FB49A527FC10BB0078262C /* DeepLinkBaseCoordinator.swift in Sources */,
 				041E8E0B27EFFED40028C7CF /* ShakeBottles+UIImageView.swift in Sources */,
 				685F344952A131EFE5C8C49E /* BaseViewController.swift in Sources */,
+				04FB49A727FC10FC0078262C /* DeepLinkCoordinator.swift in Sources */,
 				04FB497727F172560078262C /* AppearanceManager.swift in Sources */,
 				685F34B2ED657298DA65C345 /* BaseTabBarController.swift in Sources */,
 				04FB497127F162480078262C /* ShakeBottles+UIColor.swift in Sources */,
@@ -662,19 +730,27 @@
 				685F395318B46CA592FE0A5E /* BaseView.swift in Sources */,
 				04FB496F27F0EFF60078262C /* MeSettingsCell.swift in Sources */,
 				04FB498927F18B060078262C /* BottlesVM.swift in Sources */,
+				04FB49AD27FCC3DE0078262C /* MeBaseCoordinator.swift in Sources */,
 				04FB498227F18AD70078262C /* BottlesViewController.swift in Sources */,
+				04FB499A27FAA3300078262C /* BottlesCoordinator.swift in Sources */,
 				04FB499127F639890078262C /* BottleSeaView.swift in Sources */,
 				04FB497D27F17F600078262C /* ShakeVM.swift in Sources */,
+				04FB49A027FC0BF30078262C /* MainBaseCoordinator.swift in Sources */,
 				685F3DDDB655A29AC1688D2E /* TabItem.swift in Sources */,
 				041E8E1227F0331B0028C7CF /* BaseViewModel.swift in Sources */,
 				041E8E0327EF99970028C7CF /* AvatarTopView.swift in Sources */,
+				04FB499827FA9A520078262C /* ShakeCoordinator.swift in Sources */,
 				041E8DF227EDC6850028C7CF /* MeNavigationController.swift in Sources */,
+				04FB499C27FAA3390078262C /* MeCoordinator.swift in Sources */,
 				685F3DC4BDBE5DC2D7D1950E /* ShakeViewController.swift in Sources */,
+				04FB499627FA30710078262C /* Coordinator.swift in Sources */,
 				041E8DF727EDC7670028C7CF /* ShakeNavigationController.swift in Sources */,
 				04FB497327F16CFF0078262C /* Themes+UIColor.swift in Sources */,
 				685F3F344423DE68D47E8C7D /* MeViewController.swift in Sources */,
 				04FB498627F18AF20078262C /* BottlesView.swift in Sources */,
 				685F39921E8859EF704CDC52 /* BaseImageView.swift in Sources */,
+				04FB49AB27FCC3A60078262C /* ShakeBaseCoordinator.swift in Sources */,
+				04FB49A927FCC28F0078262C /* BottlesBaseCoordinator.swift in Sources */,
 				041E8E1427F035690028C7CF /* MeTableViewDelegate.swift in Sources */,
 				685F3F4FC5F6A28AB0C4AD1C /* BaseLabel.swift in Sources */,
 			);

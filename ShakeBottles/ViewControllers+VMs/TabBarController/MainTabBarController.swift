@@ -57,7 +57,7 @@ class MainTabBarController: BaseTabBarController {
         }
 
         for i in 0..<items.count {
-            controllers.append(items[i].viewController)
+            controllers.append(items[i].coordinator.start())
         }
         view.layoutIfNeeded()
         completion(controllers)

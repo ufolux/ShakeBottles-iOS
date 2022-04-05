@@ -10,16 +10,27 @@ enum TabItem: String, CaseIterable {
     case bottles = "Bottles"
     case me = "Me"
 
-    var viewController: UIViewController {
+    var coordinator: Coordinator {
         switch self {
         case .shake:
-            return ShakeNavigationController(rootViewController: ShakeViewController())
+            return ShakeCoordinator()
         case .bottles:
-            return BottlesNavigationController(rootViewController: BottlesViewController())
+            return BottlesCoordinator()
         case .me:
-            return MeNavigationController(rootViewController: MeViewController())
+            return MeCoordinator()
         }
     }
+    
+//    var viewController: UIViewController {
+//        switch self {
+//        case .shake:
+//            return ShakeNavigationController()
+//        case .bottles:
+//            return BottlesNavigationController()
+//        case .me:
+//            return MeNavigationController()
+//        }
+//    }
 
     var icon: UIImage? {
         switch self {

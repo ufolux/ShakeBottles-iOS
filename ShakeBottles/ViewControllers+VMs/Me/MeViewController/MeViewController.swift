@@ -6,8 +6,18 @@ import Foundation
 import UIKit
 import SnapKit
 
-final class MeViewController: UIViewController {
+final class MeViewController: BaseViewController, MeBaseCoordinated {
+    var coordinator: MeBaseCoordinator?
     private let vm = MeVM()
+    
+    init(coordinator: MeBaseCoordinator) {
+        super.init(nibName: nil, bundle: nil)
+        self.coordinator = coordinator
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func loadView() {
         view = MeView(vm: vm)

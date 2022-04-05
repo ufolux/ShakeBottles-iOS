@@ -7,9 +7,20 @@ import UIKit
 import CoreMotion
 import AVFoundation
 
-class ShakeViewController: BaseViewController, AVAudioPlayerDelegate {
+class ShakeViewController: BaseViewController, AVAudioPlayerDelegate, ShakeBaseCoordinated {
     private let vm: ShakeVM = ShakeVM()
     private let motionManager = CMMotionManager()
+    
+    var coordinator: ShakeBaseCoordinator?
+    
+    init(coordinator: ShakeBaseCoordinator) {
+        super.init(nibName: nil, bundle: nil)
+        self.coordinator = coordinator
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func loadView() {
         view = ShakeView(vm: vm)
@@ -24,18 +35,14 @@ class ShakeViewController: BaseViewController, AVAudioPlayerDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        UIApplication.shared.applicationSupportsShakeToEdit = true
-//        motionManager.startDeviceMotionUpdates()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-//        UIApplication.shared.applicationSupportsShakeToEdit = false
-//        motionManager.stopDeviceMotionUpdates()
     }
     
     // MARK: - actions
     @objc func historyBtnClicked() {
-        print("history")
+        
     }
 }

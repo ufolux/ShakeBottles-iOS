@@ -9,12 +9,13 @@ import Foundation
 import UIKit
 
 class MeNavigationController: UINavigationController {
+    
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
     
-    override init(rootViewController: UIViewController) {
-        super.init(rootViewController: rootViewController)
+    init() {
+        super.init(nibName: nil, bundle: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
