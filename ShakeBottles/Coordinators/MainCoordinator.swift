@@ -7,22 +7,6 @@
 
 import UIKit
 
-enum AppFlow {
-    case home(HomeScreen)
-    case orders(OrdersScreen)
-}
-
-enum HomeScreen {
-    case initialScreen
-    case doubleButtonScreen
-}
-
-enum OrdersScreen {
-    case firstScreen
-    case secondScreen
-    case thirdScreen
-}
-
 class MainCoordinator: MainBaseCoordinator {
     // TabBarController Coordinator
     var parentCoordinator: MainBaseCoordinator?

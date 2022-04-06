@@ -7,6 +7,32 @@
 
 import UIKit
 
+enum AppFlow {
+    case shake(ShakeScreen)
+    case bottle(BottlesScreen)
+    case me(MeScreen)
+}
+
+enum ShakeScreen {
+    case shake
+    case history
+}
+
+enum BottlesScreen {
+    case bottle
+    case message
+}
+
+enum MeScreen {
+    case me
+    case editProfile
+    case appearance
+    case language
+    case dataAndStorage
+    case credit
+    case about
+}
+
 protocol FlowCoordinator: AnyObject {
     var parentCoordinator: MainBaseCoordinator? { get set }
 }
@@ -24,9 +50,13 @@ extension Coordinator {
             (rootViewController as? UINavigationController)
         }
     }
-    
-    func resetToRoot(animated: Bool) -> Self {
+
+    @discardableResult func resetToRoot(animated: Bool = true) -> Self {
         navigationRootViewController?.popToRootViewController(animated: animated)
         return self
+    }
+    
+    func push(viewController: UIViewController, animated: Bool = true) {
+        navigationRootViewController?.pushViewController(viewController, animated: animated)
     }
 }

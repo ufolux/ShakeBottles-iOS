@@ -19,7 +19,7 @@ protocol ShakeBaseCoordinated {
 }
 
 protocol BottlesBaseCoordinated {
-    var coordinator: BottlesCoordinator? { get }
+    var coordinator: BottlesBaseCoordinator? { get }
 }
 
 protocol MeBaseCoordinated {

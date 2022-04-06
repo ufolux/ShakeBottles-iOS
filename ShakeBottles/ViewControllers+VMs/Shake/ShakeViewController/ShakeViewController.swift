@@ -7,15 +7,13 @@ import UIKit
 import CoreMotion
 import AVFoundation
 
-class ShakeViewController: BaseViewController, AVAudioPlayerDelegate, ShakeBaseCoordinated {
+class ShakeViewController: BaseViewController, AVAudioPlayerDelegate {
     private let vm: ShakeVM = ShakeVM()
     private let motionManager = CMMotionManager()
     
-    var coordinator: ShakeBaseCoordinator?
-    
     init(coordinator: ShakeBaseCoordinator) {
         super.init(nibName: nil, bundle: nil)
-        self.coordinator = coordinator
+        vm.coordinator = coordinator
     }
     
     required init?(coder: NSCoder) {
@@ -29,8 +27,8 @@ class ShakeViewController: BaseViewController, AVAudioPlayerDelegate, ShakeBaseC
     override func viewDidLoad() {
         super.viewDidLoad()
         let editBtn = UIBarButtonItem(title: "History", style: .plain, target: self, action: #selector(historyBtnClicked))
-        self.navigationItem.rightBarButtonItem = editBtn
-        self.navigationItem.title = "Shake"
+        navigationItem.rightBarButtonItem = editBtn
+        navigationItem.title = "Shake"
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -43,6 +41,6 @@ class ShakeViewController: BaseViewController, AVAudioPlayerDelegate, ShakeBaseC
     
     // MARK: - actions
     @objc func historyBtnClicked() {
-        
+        vm.coordinator?.moveTo(flow: .shake(.history), userData: nil)
     }
 }

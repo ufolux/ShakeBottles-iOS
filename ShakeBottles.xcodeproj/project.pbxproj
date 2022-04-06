@@ -50,17 +50,25 @@
 		04FB49A927FCC28F0078262C /* BottlesBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49A827FCC28F0078262C /* BottlesBaseCoordinator.swift */; };
 		04FB49AB27FCC3A60078262C /* ShakeBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49AA27FCC3A60078262C /* ShakeBaseCoordinator.swift */; };
 		04FB49AD27FCC3DE0078262C /* MeBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49AC27FCC3DE0078262C /* MeBaseCoordinator.swift */; };
+		04FB49B227FD0BDE0078262C /* ShakeHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49B127FD0BDE0078262C /* ShakeHistoryViewController.swift */; };
+		04FB49B427FD10010078262C /* BottlesMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49B327FD10010078262C /* BottlesMessagesViewController.swift */; };
+		04FB49B827FD17EB0078262C /* MeEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49B727FD17EB0078262C /* MeEditProfileViewController.swift */; };
 		1CBCE6E3E1709591667B5C97 /* Pods_ShakeBottles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5CB30138BDB7AF589FA0E9 /* Pods_ShakeBottles.framework */; };
 		543AABF1A0EF02DF9813E35B /* Pods_ShakeBottles_ShakeBottlesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E63EEAFDBAEE7769E0EB393 /* Pods_ShakeBottles_ShakeBottlesUITests.framework */; };
 		66927E2C35D228AE905264FF /* Pods_ShakeBottlesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64822670690957EEFB699817 /* Pods_ShakeBottlesTests.framework */; };
+		685F31FF2F498C5F6791D80F /* MeCreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F35D40EFE1878D20E7622 /* MeCreditViewController.swift */; };
+		685F3328A272CE69FA9C3553 /* MeDataAndStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F3C4D0EB24C6644C10E64 /* MeDataAndStorageViewController.swift */; };
 		685F344952A131EFE5C8C49E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F305574CDC0249065C2C0 /* BaseViewController.swift */; };
 		685F34B2ED657298DA65C345 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F3A011DCFC4F6F325F8EB /* BaseTabBarController.swift */; };
 		685F354421BD6288AED186E4 /* TabNavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F37594D4E8B19E32AC9C7 /* TabNavigationMenu.swift */; };
 		685F358B5B7F3B4B55AE0E28 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F32D3F903EBF9D939E8FE /* MainTabBarController.swift */; };
+		685F359A18EDEB6FC0366EFC /* MeLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F339489218C876F23D6D1 /* MeLanguageViewController.swift */; };
+		685F36E4CB6ED69433F5E126 /* MeAppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F308AC0385FD9379FF695 /* MeAppearanceViewController.swift */; };
 		685F395318B46CA592FE0A5E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F3C46632B51F40B6217D5 /* BaseView.swift */; };
 		685F39921E8859EF704CDC52 /* BaseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F325901187923415B6951 /* BaseImageView.swift */; };
 		685F3DC4BDBE5DC2D7D1950E /* ShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F3C62C2C5013E658FE302 /* ShakeViewController.swift */; };
 		685F3DDDB655A29AC1688D2E /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F344CE1EA2CA79B3BCE5E /* TabItem.swift */; };
+		685F3EFDD0BE64168CEB2924 /* MeAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F302B4BE3D394A16AF81F /* MeAboutViewController.swift */; };
 		685F3F344423DE68D47E8C7D /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F326639905DEC179558F8 /* MeViewController.swift */; };
 		685F3F4FC5F6A28AB0C4AD1C /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F32A68103ADAC38DC0F03 /* BaseLabel.swift */; };
 /* End PBXBuildFile section */
@@ -130,18 +138,26 @@
 		04FB49A827FCC28F0078262C /* BottlesBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottlesBaseCoordinator.swift; sourceTree = "<group>"; };
 		04FB49AA27FCC3A60078262C /* ShakeBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeBaseCoordinator.swift; sourceTree = "<group>"; };
 		04FB49AC27FCC3DE0078262C /* MeBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeBaseCoordinator.swift; sourceTree = "<group>"; };
+		04FB49B127FD0BDE0078262C /* ShakeHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeHistoryViewController.swift; sourceTree = "<group>"; };
+		04FB49B327FD10010078262C /* BottlesMessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottlesMessagesViewController.swift; sourceTree = "<group>"; };
+		04FB49B727FD17EB0078262C /* MeEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeEditProfileViewController.swift; sourceTree = "<group>"; };
 		0D5CB30138BDB7AF589FA0E9 /* Pods_ShakeBottles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShakeBottles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CB27624219CCF69B060171 /* Pods-ShakeBottles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakeBottles.debug.xcconfig"; path = "Target Support Files/Pods-ShakeBottles/Pods-ShakeBottles.debug.xcconfig"; sourceTree = "<group>"; };
 		64822670690957EEFB699817 /* Pods_ShakeBottlesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShakeBottlesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		685F302B4BE3D394A16AF81F /* MeAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeAboutViewController.swift; sourceTree = "<group>"; };
 		685F305574CDC0249065C2C0 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		685F308AC0385FD9379FF695 /* MeAppearanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeAppearanceViewController.swift; sourceTree = "<group>"; };
 		685F325901187923415B6951 /* BaseImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseImageView.swift; sourceTree = "<group>"; };
 		685F326639905DEC179558F8 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		685F32A68103ADAC38DC0F03 /* BaseLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
 		685F32D3F903EBF9D939E8FE /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		685F339489218C876F23D6D1 /* MeLanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeLanguageViewController.swift; sourceTree = "<group>"; };
 		685F344CE1EA2CA79B3BCE5E /* TabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		685F35D40EFE1878D20E7622 /* MeCreditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeCreditViewController.swift; sourceTree = "<group>"; };
 		685F37594D4E8B19E32AC9C7 /* TabNavigationMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationMenu.swift; sourceTree = "<group>"; };
 		685F3A011DCFC4F6F325F8EB /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		685F3C46632B51F40B6217D5 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		685F3C4D0EB24C6644C10E64 /* MeDataAndStorageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeDataAndStorageViewController.swift; sourceTree = "<group>"; };
 		685F3C62C2C5013E658FE302 /* ShakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeViewController.swift; sourceTree = "<group>"; };
 		9E63EEAFDBAEE7769E0EB393 /* Pods_ShakeBottles_ShakeBottlesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShakeBottles_ShakeBottlesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3BF67125604C35C1BFA485 /* Pods-ShakeBottles-ShakeBottlesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakeBottles-ShakeBottlesUITests.release.xcconfig"; path = "Target Support Files/Pods-ShakeBottles-ShakeBottlesUITests/Pods-ShakeBottles-ShakeBottlesUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -234,8 +250,14 @@
 		041E8E0C27F00B4B0028C7CF /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				04FB49A227FC0EB50078262C /* Coordinators */,
+				04FB49B627FD17C30078262C /* MeEditViewController */,
+				04FB49A227FC0EB50078262C /* Coordinator */,
 				041E8E0D27F00B570028C7CF /* MeViewController */,
+				685F3A125B639A78BEA06218 /* MeAppearanceViewController */,
+				685F3F1E9A1653BF260A6612 /* MeLanguageViewController */,
+				685F36162801BC8940762045 /* MeDataAndStorageViewController */,
+				685F38E08A16B10952C48DDC /* MeCreditViewController */,
+				685F3AC44BF350FBC51F51A3 /* MeAboutViewController */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -326,7 +348,8 @@
 		04FB497827F17CC00078262C /* Shake */ = {
 			isa = PBXGroup;
 			children = (
-				04FB49A327FC0ED20078262C /* Coordinators */,
+				04FB49B027FD0BB30078262C /* ShakeHistoryViewController */,
+				04FB49A327FC0ED20078262C /* Coordinator */,
 				04FB497B27F17D000078262C /* ShakeViewController */,
 			);
 			path = Shake;
@@ -345,7 +368,8 @@
 		04FB497E27F18AA60078262C /* Bottles */ = {
 			isa = PBXGroup;
 			children = (
-				04FB49A127FC0EA70078262C /* Coordinators */,
+				04FB49B527FD100B0078262C /* BottlesMessagesViewController */,
+				04FB49A127FC0EA70078262C /* Coordinator */,
 				04FB498027F18AB80078262C /* BottlesViewController */,
 			);
 			path = Bottles;
@@ -383,31 +407,55 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
-		04FB49A127FC0EA70078262C /* Coordinators */ = {
+		04FB49A127FC0EA70078262C /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				04FB499927FAA3300078262C /* BottlesCoordinator.swift */,
 				04FB49A827FCC28F0078262C /* BottlesBaseCoordinator.swift */,
 			);
-			path = Coordinators;
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		04FB49A227FC0EB50078262C /* Coordinators */ = {
+		04FB49A227FC0EB50078262C /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				04FB499B27FAA3390078262C /* MeCoordinator.swift */,
 				04FB49AC27FCC3DE0078262C /* MeBaseCoordinator.swift */,
 			);
-			path = Coordinators;
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		04FB49A327FC0ED20078262C /* Coordinators */ = {
+		04FB49A327FC0ED20078262C /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				04FB499727FA9A520078262C /* ShakeCoordinator.swift */,
 				04FB49AA27FCC3A60078262C /* ShakeBaseCoordinator.swift */,
 			);
-			path = Coordinators;
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		04FB49B027FD0BB30078262C /* ShakeHistoryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04FB49B127FD0BDE0078262C /* ShakeHistoryViewController.swift */,
+			);
+			path = ShakeHistoryViewController;
+			sourceTree = "<group>";
+		};
+		04FB49B527FD100B0078262C /* BottlesMessagesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04FB49B327FD10010078262C /* BottlesMessagesViewController.swift */,
+			);
+			path = BottlesMessagesViewController;
+			sourceTree = "<group>";
+		};
+		04FB49B627FD17C30078262C /* MeEditViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04FB49B727FD17EB0078262C /* MeEditProfileViewController.swift */,
+			);
+			path = MeEditViewController;
 			sourceTree = "<group>";
 		};
 		06AF92E940204860D6134772 /* Pods */ = {
@@ -433,6 +481,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		685F36162801BC8940762045 /* MeDataAndStorageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				685F3C4D0EB24C6644C10E64 /* MeDataAndStorageViewController.swift */,
+			);
+			path = MeDataAndStorageViewController;
+			sourceTree = "<group>";
+		};
+		685F38E08A16B10952C48DDC /* MeCreditViewController */ = {
+			isa = PBXGroup;
+			children = (
+				685F35D40EFE1878D20E7622 /* MeCreditViewController.swift */,
+			);
+			path = MeCreditViewController;
+			sourceTree = "<group>";
+		};
+		685F3A125B639A78BEA06218 /* MeAppearanceViewController */ = {
+			isa = PBXGroup;
+			children = (
+				685F308AC0385FD9379FF695 /* MeAppearanceViewController.swift */,
+			);
+			path = MeAppearanceViewController;
+			sourceTree = "<group>";
+		};
+		685F3AC44BF350FBC51F51A3 /* MeAboutViewController */ = {
+			isa = PBXGroup;
+			children = (
+				685F302B4BE3D394A16AF81F /* MeAboutViewController.swift */,
+			);
+			path = MeAboutViewController;
+			sourceTree = "<group>";
+		};
 		685F3B1208AD40D6FBCDE1C9 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,6 +536,14 @@
 				685F3FFF4B413256D45C895D /* TabBarController */,
 			);
 			path = "ViewControllers+VMs";
+			sourceTree = "<group>";
+		};
+		685F3F1E9A1653BF260A6612 /* MeLanguageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				685F339489218C876F23D6D1 /* MeLanguageViewController.swift */,
+			);
+			path = MeLanguageViewController;
 			sourceTree = "<group>";
 		};
 		685F3FFF4B413256D45C895D /* TabBarController */ = {
@@ -718,6 +806,7 @@
 				041E8E0F27F00BD00028C7CF /* MeVM.swift in Sources */,
 				685F354421BD6288AED186E4 /* TabNavigationMenu.swift in Sources */,
 				041E8DFF27EF8E390028C7CF /* MeView.swift in Sources */,
+				04FB49B227FD0BDE0078262C /* ShakeHistoryViewController.swift in Sources */,
 				04FB499E27FC09B00078262C /* MainCoordinator.swift in Sources */,
 				04FB49A527FC10BB0078262C /* DeepLinkBaseCoordinator.swift in Sources */,
 				041E8E0B27EFFED40028C7CF /* ShakeBottles+UIImageView.swift in Sources */,
@@ -729,6 +818,7 @@
 				04FB497A27F17CEF0078262C /* ShakeView.swift in Sources */,
 				685F395318B46CA592FE0A5E /* BaseView.swift in Sources */,
 				04FB496F27F0EFF60078262C /* MeSettingsCell.swift in Sources */,
+				04FB49B427FD10010078262C /* BottlesMessagesViewController.swift in Sources */,
 				04FB498927F18B060078262C /* BottlesVM.swift in Sources */,
 				04FB49AD27FCC3DE0078262C /* MeBaseCoordinator.swift in Sources */,
 				04FB498227F18AD70078262C /* BottlesViewController.swift in Sources */,
@@ -750,9 +840,15 @@
 				04FB498627F18AF20078262C /* BottlesView.swift in Sources */,
 				685F39921E8859EF704CDC52 /* BaseImageView.swift in Sources */,
 				04FB49AB27FCC3A60078262C /* ShakeBaseCoordinator.swift in Sources */,
+				04FB49B827FD17EB0078262C /* MeEditProfileViewController.swift in Sources */,
 				04FB49A927FCC28F0078262C /* BottlesBaseCoordinator.swift in Sources */,
 				041E8E1427F035690028C7CF /* MeTableViewDelegate.swift in Sources */,
 				685F3F4FC5F6A28AB0C4AD1C /* BaseLabel.swift in Sources */,
+				685F3EFDD0BE64168CEB2924 /* MeAboutViewController.swift in Sources */,
+				685F36E4CB6ED69433F5E126 /* MeAppearanceViewController.swift in Sources */,
+				685F31FF2F498C5F6791D80F /* MeCreditViewController.swift in Sources */,
+				685F3328A272CE69FA9C3553 /* MeDataAndStorageViewController.swift in Sources */,
+				685F359A18EDEB6FC0366EFC /* MeLanguageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

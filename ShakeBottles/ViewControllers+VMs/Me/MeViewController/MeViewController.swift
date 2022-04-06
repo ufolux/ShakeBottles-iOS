@@ -9,10 +9,10 @@ import SnapKit
 final class MeViewController: BaseViewController, MeBaseCoordinated {
     var coordinator: MeBaseCoordinator?
     private let vm = MeVM()
-    
+
     init(coordinator: MeBaseCoordinator) {
         super.init(nibName: nil, bundle: nil)
-        self.coordinator = coordinator
+        vm.coordinator = coordinator
     }
     
     required init?(coder: NSCoder) {
@@ -26,7 +26,7 @@ final class MeViewController: BaseViewController, MeBaseCoordinated {
     override func viewDidLoad() {
         super.viewDidLoad()
         let editBtn = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(editBtnClicked))
-        self.navigationItem.rightBarButtonItem = editBtn
+        navigationItem.rightBarButtonItem = editBtn
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +34,6 @@ final class MeViewController: BaseViewController, MeBaseCoordinated {
     }
     
     @objc func editBtnClicked() {
-        print("Btn Clicked")
+        vm.coordinator?.moveTo(flow: .me(.editProfile), userData: nil)
     }
 }

@@ -31,7 +31,7 @@ final class AvatarTopView: BaseView {
             avatarImgV.loadImage(from: url, placeholder: placeholderAvatar)
         }
         get {
-            return _avatarURL
+            _avatarURL
         }
     }
     var nameStr: String = ""
@@ -41,7 +41,7 @@ final class AvatarTopView: BaseView {
     init(vm: MeVM) {
         super.init(frame: .zero)
         self.vm = vm
-        self.backgroundColor = .clear
+        backgroundColor = .clear
         
         // avatar
         avatarImgV = UIImageView()
@@ -49,9 +49,9 @@ final class AvatarTopView: BaseView {
         avatarImgV.layer.masksToBounds = true
         avatarImgV.image = placeholderAvatar
         avatarImgV.backgroundColor = UIColor(0x9bdefe)
-        self.addSubview(avatarImgV)
+        addSubview(avatarImgV)
         avatarImgV.snp.makeConstraints { make in
-            make.centerX.equalTo(self.snp.centerX)
+            make.centerX.equalTo(snp.centerX)
             make.width.equalTo(88)
             make.height.equalTo(88)
             make.topMargin.equalTo(0)
@@ -61,9 +61,9 @@ final class AvatarTopView: BaseView {
         nameLbl = UILabel()
         nameLbl.text = nameStr
         nameLbl.font = UIFont.boldSystemFont(ofSize: 28)
-        self.addSubview(nameLbl)
+        addSubview(nameLbl)
         nameLbl.snp.makeConstraints { make in
-            make.centerX.equalTo(self.snp.centerX)
+            make.centerX.equalTo(snp.centerX)
             make.top.equalTo(avatarImgV.snp.bottom).offset(24)
         }
         
@@ -73,12 +73,12 @@ final class AvatarTopView: BaseView {
         phoneIdContainer = UIStackView(arrangedSubviews: [phoneNumLbl, dotLbl, idLbl])
         phoneIdContainer.axis = .horizontal
         phoneIdContainer.spacing = 2
-        self.addSubview(phoneIdContainer)
+        addSubview(phoneIdContainer)
         phoneIdContainer.snp.makeConstraints { make in
             make.top.equalTo(nameLbl.snp.bottom)
-            make.centerX.equalTo(self.snp.centerX)
-            make.leading.equalTo(self.snp.leading).offset(32)
-            make.trailing.equalTo(self.snp.trailing).offset(-32)
+            make.centerX.equalTo(snp.centerX)
+            make.leading.equalTo(snp.leading).offset(32)
+            make.trailing.equalTo(snp.trailing).offset(-32)
         }
         
         phoneNumLbl.text = "+8613827898989"

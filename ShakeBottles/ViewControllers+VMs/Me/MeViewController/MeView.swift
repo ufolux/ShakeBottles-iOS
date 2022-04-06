@@ -18,15 +18,15 @@ final class MeView: BaseView, UITableViewDelegate {
     init(vm: MeVM) {
         super.init(frame: .zero)
         self.vm = vm
-        self.backgroundColor = AppearanceManager.sharedInstance.currentTheme.background
+        backgroundColor = AppearanceManager.sharedInstance.currentTheme.background
         
         // avatar top view
         avatarTopView = AvatarTopView(vm: vm)
-        self.addSubview(avatarTopView)
+        addSubview(avatarTopView)
         avatarTopView.snp.makeConstraints { make in
             make.topMargin.equalTo(0)
-            make.leading.equalTo(self.snp.leading)
-            make.trailing.equalTo(self.snp.trailing)
+            make.leading.equalTo(snp.leading)
+            make.trailing.equalTo(snp.trailing)
             make.height.equalTo(250)
         }
         
@@ -36,12 +36,12 @@ final class MeView: BaseView, UITableViewDelegate {
         tvDelegate = MeTableViewDelegate(vm: vm)
         tableView.dataSource = tvDelegate
         tableView.delegate = tvDelegate
-        self.addSubview(tableView)
+        addSubview(tableView)
         tableView.snp.makeConstraints { make in
-            make.leading.equalTo(self.snp.leading)
-            make.trailing.equalTo(self.snp.trailing)
+            make.leading.equalTo(snp.leading)
+            make.trailing.equalTo(snp.trailing)
             make.top.equalTo(avatarTopView.snp.bottom).offset(8)
-            make.bottom.equalTo(self.snp.bottom)
+            make.bottom.equalTo(snp.bottom)
         }
     }
     

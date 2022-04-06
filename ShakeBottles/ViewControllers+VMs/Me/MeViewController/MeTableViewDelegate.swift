@@ -19,14 +19,27 @@ class MeTableViewDelegate: NSObject, UITableViewDataSource, UITableViewDelegate 
     
     // UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        switch indexPath.row {
+        case 0:
+            vm.coordinator?.moveTo(flow: .me(.appearance), userData: nil)
+        case 1:
+            vm.coordinator?.moveTo(flow: .me(.language), userData: nil)
+        case 2:
+            vm.coordinator?.moveTo(flow: .me(.dataAndStorage), userData: nil)
+        case 3:
+            vm.coordinator?.moveTo(flow: .me(.credit), userData: nil)
+        case 4:
+            vm.coordinator?.moveTo(flow: .me(.about), userData: nil)
+        default:
+            break
+        }
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
     
     // UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return vm.settingsTableViewArray.count
+        vm.settingsTableViewArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
