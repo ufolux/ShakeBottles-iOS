@@ -15,7 +15,8 @@ class BottlesCoordinator: BottlesBaseCoordinator {
     
     func start() -> UIViewController {
         let nvc = BottlesNavigationController()
-        let vc = BottlesViewController(coordinator: self)
+//        let vc = BottlesViewController(coordinator: self)
+        let vc = UniChatViewController()
         nvc.pushViewController(vc, animated: false)
         rootViewController = nvc
         return rootViewController

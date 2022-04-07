@@ -46,7 +46,7 @@ class TabNavigationMenu: BaseView {
 
     func createTabItem(item: TabItem) -> UIView {
         let tabBarItem = BaseView(frame: CGRect.zero)
-        let itemTitleLabel = BaseLabel(frame: CGRect.zero)
+        let itemTitleLabel = UILabel(frame: CGRect.zero)
         let itemIconView = BaseImageView(frame: CGRect.zero)
         let selectedItemView = BaseImageView(frame: CGRect.zero)
 

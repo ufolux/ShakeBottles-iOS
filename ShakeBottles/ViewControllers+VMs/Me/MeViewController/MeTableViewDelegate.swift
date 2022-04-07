@@ -7,11 +7,10 @@
 
 import Foundation
 import UIKit
-import SwiftIconFont
 
 class MeTableViewDelegate: NSObject, UITableViewDataSource, UITableViewDelegate {
     private var vm: MeVM!
-    let CellIdentifier = "com.shakebottles.MeSettingsCell"
+    
     init(vm: MeVM) {
         super.init()
         self.vm = vm
@@ -43,13 +42,13 @@ class MeTableViewDelegate: NSObject, UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier)
+        var cell = tableView.dequeueReusableCell(withIdentifier: Self.CellIdentifier)
         if cell == nil {
-            cell = UITableViewCell(style: .value1, reuseIdentifier: CellIdentifier)
+            cell = UITableViewCell(style: .value1, reuseIdentifier: Self.CellIdentifier)
             cell?.backgroundColor = .clear
         }
         cell!.textLabel?.text = vm.settingsTableViewArray[indexPath.row].title
-        cell!.imageView?.setIcon(from: .fontAwesome5Solid, code: vm.settingsTableViewArray[indexPath.row].icon, textColor: .white, backgroundColor: .clear, size: CGSize(width: 30, height: 30))
+        cell!.imageView?.image = UIImage(named: vm.settingsTableViewArray[indexPath.row].icon)
         cell!.imageView?.backgroundColor = vm.settingsTableViewArray[indexPath.row].color
         cell!.imageView?.layer.cornerRadius = 8
         cell!.imageView?.layer.masksToBounds = true
@@ -57,4 +56,9 @@ class MeTableViewDelegate: NSObject, UITableViewDataSource, UITableViewDelegate 
         cell!.accessoryType = .disclosureIndicator
         return cell!
     }
+}
+
+
+extension MeTableViewDelegate {
+    static let CellIdentifier = "com.shakebottles.MeSettingsCell"
 }
