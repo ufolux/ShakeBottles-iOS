@@ -13,16 +13,14 @@ PODS:
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
-  - SnapKit (5.0.0)
-  - SwiftIconFont (6.2.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Apollo (= 0.51.2)
   - RxCocoa (= 6.5.0)
   - RxDataSources (= 5.0)
   - RxSwift (= 6.5.0)
-  - SnapKit (= 5.0.0)
-  - SwiftIconFont (= 6.2.0)
+  - SnapKit (= 5.0.1)
 
 SPEC REPOS:
   trunk:
@@ -33,7 +31,6 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SnapKit
-    - SwiftIconFont
 
 SPEC CHECKSUMS:
   Apollo: e5bc805c3f3556c18edc4eae4e2ea4723cea2318
@@ -42,9 +39,8 @@ SPEC CHECKSUMS:
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
-  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
-  SwiftIconFont: aa5bbb9b8b8765eeec4f447e90c4c307e2cff7e8
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 478d0dfeef8e385194d46808ea567026f67d1e26
+PODFILE CHECKSUM: f2a6bf82cce826407d34cf2de4d17c87bdc339ad
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

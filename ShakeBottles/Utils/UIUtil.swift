@@ -9,39 +9,13 @@ import Foundation
 import UIKit
 
 class UIUtil {
-    static var screenWidth: Double {
-        get {
-            return UIScreen.main.bounds.width
-        }
-    }
+    // MARK: - Screen
+    static let screenWidth = UIScreen.main.bounds.width
+    static let screenHeight = UIScreen.main.bounds.height
     
-    static var screenHeight: Double {
-        get {
-            return UIScreen.main.bounds.height
-        }
-    }
-    
-    static var topSafeAreaHeight: Double {
-        get {
-            return UIApplication.shared.windows.first!.safeAreaInsets.top
-        }
-    }
-    
-    static var bottomSafeAreaHeight: Double {
-        get {
-            return UIApplication.shared.windows.first!.safeAreaInsets.bottom
-        }
-    }
-    
-    static var leftSafeAreaHeight: Double {
-        get {
-            return UIApplication.shared.windows.first!.safeAreaInsets.left
-        }
-    }
-    
-    static var rightSafeAreaHeight: Double {
-        get {
-            return UIApplication.shared.windows.first!.safeAreaInsets.right
-        }
-    }
+    // MARK: - Safe Area
+    static let topSafeAreaHeight = UIApplication.shared.windows.first!.safeAreaInsets.top
+    static let bottomSafeAreaHeight = UIApplication.shared.windows.first!.safeAreaInsets.bottom
+    static let leftSafeAreaHeight = UIApplication.shared.windows.first!.safeAreaInsets.left
+    static let rightSafeAreaHeight = UIApplication.shared.windows.first!.safeAreaInsets.right
 }

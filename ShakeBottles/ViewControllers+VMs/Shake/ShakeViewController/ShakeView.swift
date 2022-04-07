@@ -22,7 +22,7 @@ class ShakeView: BaseView, AVAudioPlayerDelegate {
     init(vm: ShakeVM) {
         super.init(frame: .zero)
         self.vm = vm
-        self.backgroundColor = AppearanceManager.sharedInstance.currentTheme.background
+        self.backgroundColor = AppearanceManager.shared.currentThemeColors.background
         
         // images
         let imageH = 130.0, imageW = imageH / 2
@@ -69,17 +69,19 @@ class ShakeView: BaseView, AVAudioPlayerDelegate {
     
     // MARK: - motion detection
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        let spacing = 32.0
+        // TODO: Correct Animation
         if event?.subtype == .motionShake {
             UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn) {
-                self.shakeImgVLeft.frame.origin.x -= 32
-                self.shakeImgVRight.frame.origin.x += 32
+                self.shakeImgVLeft.frame.origin.x -= spacing
+                self.shakeImgVRight.frame.origin.x += spacing
             }
             
             playShakeSound()
             
             UIView.animate(withDuration: 0.3, delay: 0.7, options: .curveEaseIn) {
-                self.shakeImgVLeft.frame.origin.x += 32
-                self.shakeImgVRight.frame.origin.x -= 32
+                self.shakeImgVLeft.frame.origin.x += spacing
+                self.shakeImgVRight.frame.origin.x -= spacing
             }
         }
     }

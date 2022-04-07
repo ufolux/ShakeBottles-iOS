@@ -18,7 +18,7 @@ class BottlesView: BaseView {
     init(vm: BottlesVM) {
         super.init(frame: .zero)
         self.vm = vm
-        backgroundColor = AppearanceManager.sharedInstance.currentTheme.background
+        backgroundColor = AppearanceManager.shared.currentThemeColors.background
         
         // buttons
         pickBottleBtn = UIButton()

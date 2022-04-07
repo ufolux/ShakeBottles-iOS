@@ -6,12 +6,38 @@
 //
 
 import Foundation
-import UIKit
 
-
+enum AppTheme {
+    case Default
+    case Dark
+}
 
 class AppearanceManager {
-    static let sharedInstance = AppearanceManager()
-    
-    let currentTheme: ShakeBottlesTheme = UIColor.DefaultTheme()
+    static let shared = AppearanceManager()
+    var currentThemeColors: ThemeColors = DefaultThemeColors()
+    var currentThemeSizes: ThemeSizes = DefaultThemeSizes()
+
+    func setTheme(theme: AppTheme) {
+        switch theme {
+        case .Default:
+            currentThemeColors = DefaultThemeColors()
+        case .Dark:
+            // TODO: Implement dark theme
+            currentThemeColors = DefaultThemeColors()
+        }
+    }
+
+    func resetTheme() {
+        currentThemeColors = DefaultThemeColors()
+        currentThemeSizes = DefaultThemeSizes()
+    }
+
+    init() {
+        // TODO: read theme from persisted data
+        setTheme(theme: .Default)
+    }
+
+    func saveCurrentThemeToDisk() {
+        // TODO: persist theme to disk
+    }
 }

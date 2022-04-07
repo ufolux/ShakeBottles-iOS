@@ -35,12 +35,19 @@ class UniChatTextTableViewCell: UITableViewCell {
             make.topMargin.equalTo(4)
             make.bottomMargin.equalTo(4)
         }
-        let cornerRadii = CornerRadii(topLeft: 16, topRight: 8, bottomLeft: 16, bottomRight: 8)
+        // update round corner
         bubbleContainer.rx.observe(CGRect.self, #keyPath(UIView.bounds))
             .subscribe(onNext: { [weak self] _ in
-                self?.bubbleContainer.cornerRadius(cornerRadii: cornerRadii)
+                switch sideType {
+                case .other:
+                    self!.drawLeftRoundMask(view: self!.bubbleContainer)
+                case .me:
+                    self!.drawRightRoundMask(view: self!.bubbleContainer)
+                }
             }).disposed(by: disposeBag)
 
+        // labels
+        // TODO: Provide Data
         messageLabel = UILabel(frame: .zero)
         messageLabel.numberOfLines = 0
         messageLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -82,4 +89,20 @@ class UniChatTextTableViewCell: UITableViewCell {
 
 extension UniChatTextTableViewCell {
     static let reuseIdentifier = "com.uniChat.UniChatTextTableViewCell"
+}
+
+extension UniChatTextTableViewCell {
+    private func drawLeftRoundMask(view: UIView) {
+        view.cornerRadius(topLeft: 8, topRight: 16, bottomLeft: 8, bottomRight: 16)
+    }
+    
+    
+    private func drawRightRoundMask(view: UIView) {
+        view.cornerRadius(topLeft: 16, topRight: 8, bottomLeft: 16, bottomRight: 8)
+    }
+
+    
+    private func drawLeftBubbleArrow(view: UIView) {
+        
+    }
 }

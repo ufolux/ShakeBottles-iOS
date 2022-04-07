@@ -8,11 +8,10 @@
 import Foundation
 import UIKit
 import SnapKit
-import SwiftIconFont
 
 final class AvatarTopView: BaseView {
     // private
-    private let placeholderAvatar: UIImage =  UIImage(from: .fontAwesome5Solid, code: "user", textColor: .white, backgroundColor: .clear, size: CGSize(width: 88, height: 88))
+    private let placeholderAvatar: UIImage = #imageLiteral(resourceName: "MeIcon")
     private var avatarImgV: UIImageView!
     private var nameLbl: UILabel!
     private var phoneNumLbl: UILabel!
@@ -80,7 +79,7 @@ final class AvatarTopView: BaseView {
             make.leading.equalTo(snp.leading).offset(32)
             make.trailing.equalTo(snp.trailing).offset(-32)
         }
-        
+        // TODO: Provide Data
         phoneNumLbl.text = "+8613827898989"
         phoneNumLbl.font.withSize(20)
         dotLbl.text = "·"

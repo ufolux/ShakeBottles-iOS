@@ -49,7 +49,6 @@ class MeTableViewDelegate: NSObject, UITableViewDataSource, UITableViewDelegate 
         }
         cell!.textLabel?.text = vm.settingsTableViewArray[indexPath.row].title
         cell!.imageView?.image = UIImage(named: vm.settingsTableViewArray[indexPath.row].icon)
-        cell!.imageView?.backgroundColor = vm.settingsTableViewArray[indexPath.row].color
         cell!.imageView?.layer.cornerRadius = 8
         cell!.imageView?.layer.masksToBounds = true
         cell!.detailTextLabel?.text = vm.settingsTableViewArray[indexPath.row].rightText
