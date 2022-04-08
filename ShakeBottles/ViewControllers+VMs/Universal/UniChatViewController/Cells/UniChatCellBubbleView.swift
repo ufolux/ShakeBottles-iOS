@@ -41,12 +41,6 @@ class UniChatCellBubbleView: BaseView {
     }
     
     private func setupView(side: UniChatCellSideType) {
-        if side == .me {
-            
-        } else {
-            
-        }
-
         // labels
         // TODO: Provide Data
         messageLabel = UILabel(frame: .zero)
@@ -63,24 +57,30 @@ class UniChatCellBubbleView: BaseView {
         msgStatusView.backgroundColor = .systemPink
         addSubview(msgStatusView)
         
-        msgStatusView.snp.makeConstraints { make in
-            make.rightMargin.equalTo(-AppearanceManager.shared.sizes.marginM)
-            make.height.equalTo(AppearanceManager.shared.sizes.fontSizeXXS)
-            make.width.equalTo(AppearanceManager.shared.sizes.fontSizeXXS)
-            make.bottomMargin.equalTo(-AppearanceManager.shared.sizes.marginM)
+        
+        if side == .me {
+            msgStatusView.snp.makeConstraints { make in
+                make.rightMargin.equalTo(-AppearanceManager.shared.sizes.marginM)
+                make.height.equalTo(AppearanceManager.shared.sizes.fontSizeXXS)
+                make.width.equalTo(AppearanceManager.shared.sizes.fontSizeXXS)
+                make.bottomMargin.equalTo(-AppearanceManager.shared.sizes.marginM)
+            }
+            
+            timeLabel.snp.makeConstraints { make in
+                make.right.equalTo(msgStatusView.snp.left).offset(2)
+                make.bottom.equalTo(msgStatusView.snp.bottom)
+            }
+            
+            messageLabel.snp.makeConstraints { make in
+                make.bottom.equalTo(timeLabel.snp.bottom)
+                make.topMargin.equalTo(AppearanceManager.shared.sizes.marginM)
+                make.leftMargin.equalTo(AppearanceManager.shared.sizes.marginS)
+                make.right.equalTo(timeLabel.snp.left).offset(AppearanceManager.shared.sizes.marginM)
+            }
+        } else {
+            
         }
         
-        timeLabel.snp.makeConstraints { make in
-            make.right.equalTo(msgStatusView.snp.left).offset(2)
-            make.bottom.equalTo(msgStatusView.snp.bottom)
-        }
-        
-        messageLabel.snp.makeConstraints { make in
-            make.bottom.equalTo(timeLabel.snp.bottom)
-            make.topMargin.equalTo(AppearanceManager.shared.sizes.marginM)
-            make.leftMargin.equalTo(AppearanceManager.shared.sizes.marginS)
-            make.right.equalTo(timeLabel.snp.left).offset(AppearanceManager.shared.sizes.marginM)
-        }
     }
     
     // Draw
