@@ -18,7 +18,7 @@ final class MeView: BaseView, UITableViewDelegate {
     init(vm: MeVM) {
         super.init(frame: .zero)
         self.vm = vm
-        backgroundColor = AppearanceManager.shared.currentThemeColors.background
+        backgroundColor = AppearanceManager.shared.colors.background
         
         // avatar top view
         avatarTopView = AvatarTopView(vm: vm)

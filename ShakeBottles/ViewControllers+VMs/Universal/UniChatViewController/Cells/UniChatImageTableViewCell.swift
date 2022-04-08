@@ -5,7 +5,7 @@
 import UIKit
 
 class UniChatImageTableViewCell: UITableViewCell {
-    init(withSideType sideType: UniChatCellSideType) {
+    init(withSide side: UniChatCellSideType, shape: UniChatCellShape = .round) {
         super.init(style: .default, reuseIdentifier: Self.reuseIdentifier)
     
     }

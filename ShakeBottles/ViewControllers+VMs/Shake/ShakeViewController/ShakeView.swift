@@ -22,7 +22,7 @@ class ShakeView: BaseView, AVAudioPlayerDelegate {
     init(vm: ShakeVM) {
         super.init(frame: .zero)
         self.vm = vm
-        self.backgroundColor = AppearanceManager.shared.currentThemeColors.background
+        self.backgroundColor = AppearanceManager.shared.colors.background
         
         // images
         let imageH = 130.0, imageW = imageH / 2

@@ -21,7 +21,7 @@ class BottleSeaView: BaseView, CAAnimationDelegate {
         super.init(frame: .zero)
         self.vm = vm
         clipsToBounds = true
-        backgroundColor = AppearanceManager.shared.currentThemeColors.background
+        backgroundColor = AppearanceManager.shared.colors.background
         
         // init waves
         for i in 0..<4 {

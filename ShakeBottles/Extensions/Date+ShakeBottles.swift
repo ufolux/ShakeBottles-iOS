@@ -1,5 +1,5 @@
 //
-//  ShakeBottles+Date.swift
+//  Date+ShakeBottles.swift
 //  ShakeBottles
 //
 //  Created by Sines on 4/6/22.

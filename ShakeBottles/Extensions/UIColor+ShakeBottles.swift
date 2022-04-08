@@ -1,5 +1,5 @@
 //
-//  ShakeBottles+UIColor.swift
+//  UIColor+ShakeBottles.swift
 //  ShakeBottles
 //
 //  Created by Sines on 3/27/22.

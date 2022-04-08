@@ -12,14 +12,18 @@ class UniChatTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDataSo
         self.vm = vm
     }
     
-    // MARK: - Section Header
+    // MARK: - Sections
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let timestamp = Date.timeIntervalSinceReferenceDate
+        let timestamp = Date.timeIntervalSinceReferenceDate + Double(1440 * 60 * section)
         return UniChatDateSectionHeader(cellModel: UniDateSectionModel(timestamp))
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 5
     }
     
     // MARK: - Rows
@@ -28,7 +32,21 @@ class UniChatTableViewDelegate: NSObject, UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UniChatCellType.text(.me).cellWithType
+        // TODO: Deque TableView Cell
+        var cell: UITableViewCell!
+        switch indexPath.row % 4 {
+        case 0:
+            cell = UniChatCellType.text(.me, .round).cell
+        case 1:
+            cell = UniChatCellType.text(.other, .round).cell
+        case 2:
+            cell = UniChatCellType.text(.me, .arrow).cell
+        case 3:
+            cell = UniChatCellType.text(.other, .arrow).cell
+        default:
+            fatalError("")
+        }
+        
         return cell
     }
     

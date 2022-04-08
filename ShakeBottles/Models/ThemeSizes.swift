@@ -16,7 +16,7 @@ protocol ThemeSizes {
     var screenWidth: CGFloat { get }
     var screenHeight: CGFloat { get }
 
-    // Fonts
+    // Fonts    
     var fontSizeExtraSmall: CGFloat { get }
     var fontSizeSmall: CGFloat { get }
     var fontSizeMedium: CGFloat { get }
@@ -29,6 +29,7 @@ protocol ThemeSizes {
     var marginMedium: CGFloat { get }
     var marginLarge: CGFloat { get }
     var marginExtraLarge: CGFloat { get }
+    var marginChatBubleLarge: CGFloat { get }
 
     // Spacing
     var spacingExtraSmall: CGFloat { get }
@@ -63,6 +64,7 @@ struct DefaultThemeSizes: ThemeSizes {
     let marginMedium: CGFloat = 8
     let marginLarge: CGFloat = 16
     let marginExtraLarge: CGFloat = 32
+    var marginChatBubleLarge: CGFloat = 64
 
     let spacingExtraSmall: CGFloat = 2
     let spacingSmall: CGFloat = 4

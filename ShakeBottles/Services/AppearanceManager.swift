@@ -14,22 +14,22 @@ enum AppTheme {
 
 class AppearanceManager {
     static let shared = AppearanceManager()
-    var currentThemeColors: ThemeColors = DefaultThemeColors()
-    var currentThemeSizes: ThemeSizes = DefaultThemeSizes()
+    var colors: ThemeColors = DefaultThemeColors()
+    var sizes: ThemeSizes = DefaultThemeSizes()
 
     func setTheme(theme: AppTheme) {
         switch theme {
         case .Default:
-            currentThemeColors = DefaultThemeColors()
+            colors = DefaultThemeColors()
         case .Dark:
             // TODO: Implement dark theme
-            currentThemeColors = DefaultThemeColors()
+            colors = DefaultThemeColors()
         }
     }
 
     func resetTheme() {
-        currentThemeColors = DefaultThemeColors()
-        currentThemeSizes = DefaultThemeSizes()
+        colors = DefaultThemeColors()
+        sizes = DefaultThemeSizes()
     }
 
     init() {

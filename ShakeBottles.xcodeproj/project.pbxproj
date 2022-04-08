@@ -13,7 +13,7 @@
 		041E8DFF27EF8E390028C7CF /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8DFE27EF8E390028C7CF /* MeView.swift */; };
 		041E8E0327EF99970028C7CF /* AvatarTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E0227EF99970028C7CF /* AvatarTopView.swift */; };
 		041E8E0827EFA2D90028C7CF /* UIUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E0727EFA2D90028C7CF /* UIUtil.swift */; };
-		041E8E0B27EFFED40028C7CF /* ShakeBottles+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E0A27EFFED40028C7CF /* ShakeBottles+UIImageView.swift */; };
+		041E8E0B27EFFED40028C7CF /* UIImageView+ShakeBottles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E0A27EFFED40028C7CF /* UIImageView+ShakeBottles.swift */; };
 		041E8E0F27F00BD00028C7CF /* MeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E0E27F00BD00028C7CF /* MeVM.swift */; };
 		041E8E1227F0331B0028C7CF /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E1127F0331B0028C7CF /* BaseViewModel.swift */; };
 		041E8E1427F035690028C7CF /* MeTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E8E1327F035690028C7CF /* MeTableViewDelegate.swift */; };
@@ -27,7 +27,7 @@
 		0474FA1C27ECDA550079C939 /* ShakeBottlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474FA1B27ECDA550079C939 /* ShakeBottlesTests.swift */; };
 		0474FA2627ECDA550079C939 /* ShakeBottlesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474FA2527ECDA550079C939 /* ShakeBottlesUITests.swift */; };
 		0474FA2827ECDA550079C939 /* ShakeBottlesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474FA2727ECDA550079C939 /* ShakeBottlesUITestsLaunchTests.swift */; };
-		04FB497127F162480078262C /* ShakeBottles+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB497027F162480078262C /* ShakeBottles+UIColor.swift */; };
+		04FB497127F162480078262C /* UIColor+ShakeBottles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB497027F162480078262C /* UIColor+ShakeBottles.swift */; };
 		04FB497727F172560078262C /* AppearanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB497627F172560078262C /* AppearanceManager.swift */; };
 		04FB497A27F17CEF0078262C /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB497927F17CEF0078262C /* ShakeView.swift */; };
 		04FB497D27F17F600078262C /* ShakeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB497C27F17F600078262C /* ShakeVM.swift */; };
@@ -55,11 +55,12 @@
 		04FB49BD27FE02AF0078262C /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49BC27FE02AF0078262C /* PaddingLabel.swift */; };
 		04FB49BF27FE08B20078262C /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49BE27FE08B20078262C /* BaseModel.swift */; };
 		04FB49C127FE09430078262C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49C027FE09430078262C /* Models.swift */; };
-		04FB49C327FE0A560078262C /* ShakeBottles+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49C227FE0A560078262C /* ShakeBottles+Date.swift */; };
-		04FB49C527FE50F20078262C /* ShakeBottles+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49C427FE50F20078262C /* ShakeBottles+UIView.swift */; };
-		04FB49C727FEA5D60078262C /* ChatCellBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49C627FEA5D60078262C /* ChatCellBubbleView.swift */; };
+		04FB49C327FE0A560078262C /* Date+ShakeBottles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49C227FE0A560078262C /* Date+ShakeBottles.swift */; };
+		04FB49C527FE50F20078262C /* UIView+ShakeBottles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49C427FE50F20078262C /* UIView+ShakeBottles.swift */; };
+		04FB49C727FEA5D60078262C /* UniChatCellBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49C627FEA5D60078262C /* UniChatCellBubbleView.swift */; };
 		04FB49C927FF4DB90078262C /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49C827FF4DB90078262C /* ThemeColors.swift */; };
 		04FB49CB27FF4DC40078262C /* ThemeSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49CA27FF4DC40078262C /* ThemeSizes.swift */; };
+		04FB49CD2800165C0078262C /* UITableVIewCell+ShakeBottles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB49CC2800165C0078262C /* UITableVIewCell+ShakeBottles.swift */; };
 		1CBCE6E3E1709591667B5C97 /* Pods_ShakeBottles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5CB30138BDB7AF589FA0E9 /* Pods_ShakeBottles.framework */; };
 		543AABF1A0EF02DF9813E35B /* Pods_ShakeBottles_ShakeBottlesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E63EEAFDBAEE7769E0EB393 /* Pods_ShakeBottles_ShakeBottlesUITests.framework */; };
 		66927E2C35D228AE905264FF /* Pods_ShakeBottlesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64822670690957EEFB699817 /* Pods_ShakeBottlesTests.framework */; };
@@ -110,7 +111,7 @@
 		041E8DFE27EF8E390028C7CF /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		041E8E0227EF99970028C7CF /* AvatarTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarTopView.swift; sourceTree = "<group>"; };
 		041E8E0727EFA2D90028C7CF /* UIUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtil.swift; sourceTree = "<group>"; };
-		041E8E0A27EFFED40028C7CF /* ShakeBottles+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShakeBottles+UIImageView.swift"; sourceTree = "<group>"; };
+		041E8E0A27EFFED40028C7CF /* UIImageView+ShakeBottles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ShakeBottles.swift"; sourceTree = "<group>"; };
 		041E8E0E27F00BD00028C7CF /* MeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVM.swift; sourceTree = "<group>"; };
 		041E8E1127F0331B0028C7CF /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		041E8E1327F035690028C7CF /* MeTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeTableViewDelegate.swift; sourceTree = "<group>"; };
@@ -128,7 +129,7 @@
 		0474FA2127ECDA550079C939 /* ShakeBottlesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakeBottlesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0474FA2527ECDA550079C939 /* ShakeBottlesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeBottlesUITests.swift; sourceTree = "<group>"; };
 		0474FA2727ECDA550079C939 /* ShakeBottlesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeBottlesUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		04FB497027F162480078262C /* ShakeBottles+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShakeBottles+UIColor.swift"; sourceTree = "<group>"; };
+		04FB497027F162480078262C /* UIColor+ShakeBottles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ShakeBottles.swift"; sourceTree = "<group>"; };
 		04FB497627F172560078262C /* AppearanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceManager.swift; sourceTree = "<group>"; };
 		04FB497927F17CEF0078262C /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
 		04FB497C27F17F600078262C /* ShakeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeVM.swift; sourceTree = "<group>"; };
@@ -156,11 +157,12 @@
 		04FB49BC27FE02AF0078262C /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		04FB49BE27FE08B20078262C /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		04FB49C027FE09430078262C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		04FB49C227FE0A560078262C /* ShakeBottles+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShakeBottles+Date.swift"; sourceTree = "<group>"; };
-		04FB49C427FE50F20078262C /* ShakeBottles+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShakeBottles+UIView.swift"; sourceTree = "<group>"; };
-		04FB49C627FEA5D60078262C /* ChatCellBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellBubbleView.swift; sourceTree = "<group>"; };
+		04FB49C227FE0A560078262C /* Date+ShakeBottles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ShakeBottles.swift"; sourceTree = "<group>"; };
+		04FB49C427FE50F20078262C /* UIView+ShakeBottles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ShakeBottles.swift"; sourceTree = "<group>"; };
+		04FB49C627FEA5D60078262C /* UniChatCellBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniChatCellBubbleView.swift; sourceTree = "<group>"; };
 		04FB49C827FF4DB90078262C /* ThemeColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
 		04FB49CA27FF4DC40078262C /* ThemeSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSizes.swift; sourceTree = "<group>"; };
+		04FB49CC2800165C0078262C /* UITableVIewCell+ShakeBottles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableVIewCell+ShakeBottles.swift"; sourceTree = "<group>"; };
 		0D5CB30138BDB7AF589FA0E9 /* Pods_ShakeBottles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShakeBottles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CB27624219CCF69B060171 /* Pods-ShakeBottles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShakeBottles.debug.xcconfig"; path = "Target Support Files/Pods-ShakeBottles/Pods-ShakeBottles.debug.xcconfig"; sourceTree = "<group>"; };
 		64822670690957EEFB699817 /* Pods_ShakeBottlesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShakeBottlesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,10 +269,11 @@
 		041E8E0427EF9C6D0028C7CF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				041E8E0A27EFFED40028C7CF /* ShakeBottles+UIImageView.swift */,
-				04FB497027F162480078262C /* ShakeBottles+UIColor.swift */,
-				04FB49C227FE0A560078262C /* ShakeBottles+Date.swift */,
-				04FB49C427FE50F20078262C /* ShakeBottles+UIView.swift */,
+				041E8E0A27EFFED40028C7CF /* UIImageView+ShakeBottles.swift */,
+				04FB497027F162480078262C /* UIColor+ShakeBottles.swift */,
+				04FB49C227FE0A560078262C /* Date+ShakeBottles.swift */,
+				04FB49C427FE50F20078262C /* UIView+ShakeBottles.swift */,
+				04FB49CC2800165C0078262C /* UITableVIewCell+ShakeBottles.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -494,7 +497,7 @@
 				685F3393F59BA2A46C8EB807 /* UniChatImageTableViewCell.swift */,
 				685F32B87AC197FF749980B7 /* UniChatDateSectionHeader.swift */,
 				04FB49BA27FDF6560078262C /* UniCellEnum.swift */,
-				04FB49C627FEA5D60078262C /* ChatCellBubbleView.swift */,
+				04FB49C627FEA5D60078262C /* UniChatCellBubbleView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -875,15 +878,16 @@
 				04FB49B227FD0BDE0078262C /* ShakeHistoryViewController.swift in Sources */,
 				04FB499E27FC09B00078262C /* MainCoordinator.swift in Sources */,
 				04FB49A527FC10BB0078262C /* DeepLinkBaseCoordinator.swift in Sources */,
-				041E8E0B27EFFED40028C7CF /* ShakeBottles+UIImageView.swift in Sources */,
+				041E8E0B27EFFED40028C7CF /* UIImageView+ShakeBottles.swift in Sources */,
 				685F344952A131EFE5C8C49E /* BaseViewController.swift in Sources */,
 				04FB49A727FC10FC0078262C /* DeepLinkCoordinator.swift in Sources */,
 				04FB49BD27FE02AF0078262C /* PaddingLabel.swift in Sources */,
 				04FB497727F172560078262C /* AppearanceManager.swift in Sources */,
 				685F34B2ED657298DA65C345 /* BaseTabBarController.swift in Sources */,
-				04FB497127F162480078262C /* ShakeBottles+UIColor.swift in Sources */,
+				04FB497127F162480078262C /* UIColor+ShakeBottles.swift in Sources */,
 				04FB497A27F17CEF0078262C /* ShakeView.swift in Sources */,
 				685F395318B46CA592FE0A5E /* BaseView.swift in Sources */,
+				04FB49CD2800165C0078262C /* UITableVIewCell+ShakeBottles.swift in Sources */,
 				04FB49B427FD10010078262C /* BottlesMessagesViewController.swift in Sources */,
 				04FB498927F18B060078262C /* BottlesVM.swift in Sources */,
 				04FB49AD27FCC3DE0078262C /* MeBaseCoordinator.swift in Sources */,
@@ -893,10 +897,10 @@
 				04FB497D27F17F600078262C /* ShakeVM.swift in Sources */,
 				04FB49A027FC0BF30078262C /* MainBaseCoordinator.swift in Sources */,
 				685F3DDDB655A29AC1688D2E /* TabItem.swift in Sources */,
-				04FB49C527FE50F20078262C /* ShakeBottles+UIView.swift in Sources */,
+				04FB49C527FE50F20078262C /* UIView+ShakeBottles.swift in Sources */,
 				041E8E1227F0331B0028C7CF /* BaseViewModel.swift in Sources */,
 				041E8E0327EF99970028C7CF /* AvatarTopView.swift in Sources */,
-				04FB49C327FE0A560078262C /* ShakeBottles+Date.swift in Sources */,
+				04FB49C327FE0A560078262C /* Date+ShakeBottles.swift in Sources */,
 				04FB499827FA9A520078262C /* ShakeCoordinator.swift in Sources */,
 				041E8DF227EDC6850028C7CF /* MeNavigationController.swift in Sources */,
 				04FB499C27FAA3390078262C /* MeCoordinator.swift in Sources */,
@@ -915,7 +919,7 @@
 				685F36E4CB6ED69433F5E126 /* MeAppearanceViewController.swift in Sources */,
 				685F31FF2F498C5F6791D80F /* MeCreditViewController.swift in Sources */,
 				685F3328A272CE69FA9C3553 /* MeDataAndStorageViewController.swift in Sources */,
-				04FB49C727FEA5D60078262C /* ChatCellBubbleView.swift in Sources */,
+				04FB49C727FEA5D60078262C /* UniChatCellBubbleView.swift in Sources */,
 				685F359A18EDEB6FC0366EFC /* MeLanguageViewController.swift in Sources */,
 				685F3FC41AB4756FDA3D7C1E /* UniChatVM.swift in Sources */,
 				685F33B323A66623DBCD0B4D /* UniChatViewController.swift in Sources */,
