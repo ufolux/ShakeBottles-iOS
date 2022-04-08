@@ -57,11 +57,11 @@ extension UIView {
         var bottomRight: CGFloat
         var bottomLeft: CGFloat
         
-        b.size.width -= AppearanceManager.shared.sizes.cornerRadiusMedium
-        topLeft = AppearanceManager.shared.sizes.marginLarge
-        topRight =  AppearanceManager.shared.sizes.marginMedium
-        bottomLeft =  AppearanceManager.shared.sizes.marginLarge
-        bottomRight =  AppearanceManager.shared.sizes.marginMedium
+        b.size.width -= AppearanceManager.shared.sizes.cornerRadiusM
+        topLeft = AppearanceManager.shared.sizes.marginL
+        topRight =  AppearanceManager.shared.sizes.marginM
+        bottomLeft =  AppearanceManager.shared.sizes.marginL
+        bottomRight =  AppearanceManager.shared.sizes.marginM
         
         let topLeftCenterX = b.minX + topLeft
         let topLeftCenterY = b.minY + topLeft

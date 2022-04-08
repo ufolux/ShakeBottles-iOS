@@ -56,7 +56,7 @@ class UniChatCellBubbleView: BaseView {
         
         timeLabel = UILabel(frame: .zero)
         timeLabel.text = "4:55 PM"
-        timeLabel.font.withSize(AppearanceManager.shared.sizes.fontSizeExtraSmall)
+        timeLabel.font = timeLabel.font.withSize(AppearanceManager.shared.sizes.fontSizeXS)
         addSubview(timeLabel)
         
         msgStatusView = UIView(frame: .zero)
@@ -64,23 +64,22 @@ class UniChatCellBubbleView: BaseView {
         addSubview(msgStatusView)
         
         msgStatusView.snp.makeConstraints { make in
-            make.rightMargin.equalTo(-AppearanceManager.shared.sizes.marginMedium)
-            make.height.equalTo(AppearanceManager.shared.sizes.fontSizeSmall)
-            make.width.equalTo(AppearanceManager.shared.sizes.fontSizeSmall)
-            make.bottomMargin.equalTo(-AppearanceManager.shared.sizes.marginMedium)
+            make.rightMargin.equalTo(-AppearanceManager.shared.sizes.marginM)
+            make.height.equalTo(AppearanceManager.shared.sizes.fontSizeXXS)
+            make.width.equalTo(AppearanceManager.shared.sizes.fontSizeXXS)
+            make.bottomMargin.equalTo(-AppearanceManager.shared.sizes.marginM)
         }
         
         timeLabel.snp.makeConstraints { make in
-            make.width.equalTo(60)
             make.right.equalTo(msgStatusView.snp.left).offset(2)
             make.bottom.equalTo(msgStatusView.snp.bottom)
         }
         
         messageLabel.snp.makeConstraints { make in
             make.bottom.equalTo(timeLabel.snp.bottom)
-            make.topMargin.equalTo(8)
-            make.leftMargin.equalTo(4)
-            make.right.equalTo(timeLabel.snp.left).offset(8)
+            make.topMargin.equalTo(AppearanceManager.shared.sizes.marginM)
+            make.leftMargin.equalTo(AppearanceManager.shared.sizes.marginS)
+            make.right.equalTo(timeLabel.snp.left).offset(AppearanceManager.shared.sizes.marginM)
         }
     }
     
@@ -110,23 +109,23 @@ class UniChatCellBubbleView: BaseView {
         //             \  |
         //              \ |
         var b = rect
-        b.size.width -= AppearanceManager.shared.sizes.cornerRadiusMedium
+        b.size.width -= AppearanceManager.shared.sizes.cornerRadiusM
         cornerRadius(bounds: b,
-                     topLeft: AppearanceManager.shared.sizes.cornerRadiusLarge,
-                     topRight: AppearanceManager.shared.sizes.cornerRadiusMedium,
-                     bottomLeft: AppearanceManager.shared.sizes.cornerRadiusLarge,
-                     bottomRight: AppearanceManager.shared.sizes.cornerRadiusMedium)
+                     topLeft: AppearanceManager.shared.sizes.cornerRadiusL,
+                     topRight: AppearanceManager.shared.sizes.cornerRadiusM,
+                     bottomLeft: AppearanceManager.shared.sizes.cornerRadiusL,
+                     bottomRight: AppearanceManager.shared.sizes.cornerRadiusM)
     }
     
     private func drawOtherNoArrow(_ rect: CGRect) {
         var b = rect
-        b.origin.x += AppearanceManager.shared.sizes.cornerRadiusMedium
-        b.size.width -= AppearanceManager.shared.sizes.cornerRadiusMedium
+        b.origin.x += AppearanceManager.shared.sizes.cornerRadiusM
+        b.size.width -= AppearanceManager.shared.sizes.cornerRadiusM
         cornerRadius(bounds: b,
-                     topLeft: AppearanceManager.shared.sizes.cornerRadiusMedium,
-                     topRight: AppearanceManager.shared.sizes.cornerRadiusLarge,
-                     bottomLeft: AppearanceManager.shared.sizes.cornerRadiusMedium,
-                     bottomRight: AppearanceManager.shared.sizes.cornerRadiusLarge)
+                     topLeft: AppearanceManager.shared.sizes.cornerRadiusM,
+                     topRight: AppearanceManager.shared.sizes.cornerRadiusL,
+                     bottomLeft: AppearanceManager.shared.sizes.cornerRadiusM,
+                     bottomRight: AppearanceManager.shared.sizes.cornerRadiusL)
     }
     
     private func drawMeArrow(_ :CGRect) {

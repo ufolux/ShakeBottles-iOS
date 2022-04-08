@@ -16,34 +16,35 @@ protocol ThemeSizes {
     var screenWidth: CGFloat { get }
     var screenHeight: CGFloat { get }
 
-    // Fonts    
-    var fontSizeExtraSmall: CGFloat { get }
-    var fontSizeSmall: CGFloat { get }
-    var fontSizeMedium: CGFloat { get }
-    var fontSizeLarge: CGFloat { get }
-    var fontSizeExtraLarge: CGFloat { get }
+    // Fonts
+    var fontSizeXXS: CGFloat { get }
+    var fontSizeXS: CGFloat { get }
+    var fontSizeS: CGFloat { get }
+    var fontSizeM: CGFloat { get }
+    var fontSizeL: CGFloat { get }
+    var fontSizeXL: CGFloat { get }
 
     // Margins
-    var marginExtraSmall: CGFloat { get }
-    var marginSmall: CGFloat { get }
-    var marginMedium: CGFloat { get }
-    var marginLarge: CGFloat { get }
-    var marginExtraLarge: CGFloat { get }
-    var marginChatBubleLarge: CGFloat { get }
+    var marginXS: CGFloat { get }
+    var marginS: CGFloat { get }
+    var marginM: CGFloat { get }
+    var marginL: CGFloat { get }
+    var marginXL: CGFloat { get }
+    var marginChatBubbleL: CGFloat { get }
 
     // Spacing
-    var spacingExtraSmall: CGFloat { get }
-    var spacingSmall: CGFloat { get }
-    var spacingMedium: CGFloat { get }
-    var spacingLarge: CGFloat { get }
-    var spacingExtraLarge: CGFloat { get }
+    var spacingXS: CGFloat { get }
+    var spacingS: CGFloat { get }
+    var spacingM: CGFloat { get }
+    var spacingL: CGFloat { get }
+    var spacingXL: CGFloat { get }
 
     // Corner Radius
-    var cornerRadiusExtraSmall: CGFloat { get }
-    var cornerRadiusSmall: CGFloat { get }
-    var cornerRadiusMedium: CGFloat { get }
-    var cornerRadiusLarge: CGFloat { get }
-    var cornerRadiusExtraLarge: CGFloat { get }
+    var cornerRadiusXS: CGFloat { get }
+    var cornerRadiusS: CGFloat { get }
+    var cornerRadiusM: CGFloat { get }
+    var cornerRadiusL: CGFloat { get }
+    var cornerRadiusXL: CGFloat { get }
 }
 
 struct DefaultThemeSizes: ThemeSizes {
@@ -53,30 +54,31 @@ struct DefaultThemeSizes: ThemeSizes {
     let screenWidth: CGFloat = UIScreen.main.bounds.width
     let screenHeight: CGFloat = UIScreen.main.bounds.height
 
-    let fontSizeExtraSmall: CGFloat = 10
-    let fontSizeSmall: CGFloat = 12
-    let fontSizeMedium: CGFloat = 14
-    let fontSizeLarge: CGFloat = 16
-    let fontSizeExtraLarge: CGFloat = 18
+    let fontSizeXXS: CGFloat = 8
+    let fontSizeXS: CGFloat = 10
+    let fontSizeS: CGFloat = 12
+    let fontSizeM: CGFloat = 14
+    let fontSizeL: CGFloat = 16
+    let fontSizeXL: CGFloat = 18
 
-    let marginExtraSmall: CGFloat = 2
-    let marginSmall: CGFloat = 4
-    let marginMedium: CGFloat = 8
-    let marginLarge: CGFloat = 16
-    let marginExtraLarge: CGFloat = 32
-    var marginChatBubleLarge: CGFloat = 64
+    let marginXS: CGFloat = 2
+    let marginS: CGFloat = 4
+    let marginM: CGFloat = 8
+    let marginL: CGFloat = 16
+    let marginXL: CGFloat = 32
+    var marginChatBubbleL: CGFloat = 64
 
-    let spacingExtraSmall: CGFloat = 2
-    let spacingSmall: CGFloat = 4
-    let spacingMedium: CGFloat = 8
-    let spacingLarge: CGFloat = 16
-    let spacingExtraLarge: CGFloat = 32
+    let spacingXS: CGFloat = 2
+    let spacingS: CGFloat = 4
+    let spacingM: CGFloat = 8
+    let spacingL: CGFloat = 16
+    let spacingXL: CGFloat = 32
 
-    let cornerRadiusExtraSmall: CGFloat = 2
-    let cornerRadiusSmall: CGFloat = 4
-    let cornerRadiusMedium: CGFloat = 8
-    let cornerRadiusLarge: CGFloat = 16
-    let cornerRadiusExtraLarge: CGFloat = 32
+    let cornerRadiusXS: CGFloat = 2
+    let cornerRadiusS: CGFloat = 4
+    let cornerRadiusM: CGFloat = 8
+    let cornerRadiusL: CGFloat = 16
+    let cornerRadiusXL: CGFloat = 32
 }
 
 

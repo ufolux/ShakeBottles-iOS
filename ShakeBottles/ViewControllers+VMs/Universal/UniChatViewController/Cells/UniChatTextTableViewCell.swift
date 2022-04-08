@@ -24,17 +24,17 @@ class UniChatTextTableViewCell: UITableViewCell {
         contentView.addSubview(bubbleContainer)
         if side == .me { // right
             bubbleContainer.snp.makeConstraints { make in
-                make.leading.greaterThanOrEqualTo(contentView.snp.leading).offset(AppearanceManager.shared.sizes.marginChatBubleLarge)
-                make.trailing.equalTo(contentView.snp.trailing).offset(-AppearanceManager.shared.sizes.marginMedium)
-                make.topMargin.equalTo(AppearanceManager.shared.sizes.marginSmall)
-                make.bottomMargin.equalTo(AppearanceManager.shared.sizes.marginSmall)
+                make.leading.greaterThanOrEqualTo(contentView.snp.leading).offset(AppearanceManager.shared.sizes.marginChatBubbleL)
+                make.trailing.equalTo(contentView.snp.trailing).offset(-AppearanceManager.shared.sizes.marginM)
+                make.topMargin.equalTo(AppearanceManager.shared.sizes.marginS)
+                make.bottomMargin.equalTo(AppearanceManager.shared.sizes.marginS)
             }
         } else {  // left
             bubbleContainer.snp.makeConstraints { make in
-                make.leading.greaterThanOrEqualTo(contentView.snp.leading).offset(AppearanceManager.shared.sizes.marginMedium)
-                make.trailing.equalTo(contentView.snp.trailing).offset(-AppearanceManager.shared.sizes.marginChatBubleLarge)
-                make.topMargin.equalTo(AppearanceManager.shared.sizes.marginSmall)
-                make.bottomMargin.equalTo(AppearanceManager.shared.sizes.marginSmall)
+                make.leading.greaterThanOrEqualTo(contentView.snp.leading).offset(AppearanceManager.shared.sizes.marginM)
+                make.trailing.equalTo(contentView.snp.trailing).offset(-AppearanceManager.shared.sizes.marginChatBubbleL)
+                make.topMargin.equalTo(AppearanceManager.shared.sizes.marginS)
+                make.bottomMargin.equalTo(AppearanceManager.shared.sizes.marginS)
             }
         }
     }
