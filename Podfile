@@ -9,6 +9,7 @@ target 'ShakeBottles' do
   pod 'RxCocoa', '6.5.0'
   pod 'RxDataSources', '5.0'
   pod "Apollo", "0.51.2"
+  pod "Texture", "3.1.0"
   # Pods for ShakeBottles
 
   target 'ShakeBottlesTests' do
