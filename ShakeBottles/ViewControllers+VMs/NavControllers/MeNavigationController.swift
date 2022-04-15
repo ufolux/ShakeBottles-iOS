@@ -8,16 +8,7 @@
 import Foundation
 import UIKit
 
-class MeNavigationController: UINavigationController {
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    init() {
-        super.init(nibName: nil, bundle: nil)
-    }
-    
+class MeNavigationController: BaseNavigationController {
     override func viewWillAppear(_ animated: Bool) {
         view.backgroundColor = .gray
     }

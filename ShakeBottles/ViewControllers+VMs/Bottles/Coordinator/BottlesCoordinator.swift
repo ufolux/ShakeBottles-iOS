@@ -8,42 +8,44 @@
 import Foundation
 import UIKit
 
-class BottlesCoordinator: BottlesBaseCoordinator {
-    var parentCoordinator: MainBaseCoordinator?
-    
-    lazy var rootViewController: UIViewController = UIViewController()
-    
-    func start() -> UIViewController {
-        let nvc = BottlesNavigationController()
-//        let vc = BottlesViewController(coordinator: self)
-        let vc = UniChatViewController()
-        nvc.pushViewController(vc, animated: false)
-        rootViewController = nvc
-        return rootViewController
-    }
-    
-    func moveTo(flow: AppFlow, userData: [String : Any]?) {
-        switch flow {
-        case .bottle(let bottlesScreen):
-            handleBottlesFlow(for: bottlesScreen, userData: nil)
-        default:
-            parentCoordinator?.moveTo(flow: flow, userData: nil)
-        }
-    }
-    
-    private func handleBottlesFlow(for screen: BottlesScreen, userData: [String: Any]?) {
-        switch screen {
-        case .bottle:
-            resetToRoot()
-        case .message:
-            go2BottlesMessages()
-        }
-    }
-    
-    
-    // MARK: - routers
-    private func go2BottlesMessages() {
-        let vc = BottlesMessagesViewController(coordinator: self)
-        push(viewController: vc)
-    }
-}
+//class BottlesCoordinator: BottlesBaseCoordinator {
+//    var parentCoordinator: MainBaseCoordinator?
+//    
+//    lazy var rootViewController: UIViewController = UIViewController()
+//    
+//    func start() -> UIViewController {
+//        let nvc = BottlesNavigationController()
+////        let vc = BottlesViewController(coordinator: self)
+////        nvc.pushViewController(vc, animated: false)
+//        rootViewController = nvc
+//        return rootViewController
+//    }
+//    
+//    func moveTo(flow: AppFlow, userData: [String : Any]?) {
+//        switch flow {
+//        case .bottle(let bottlesScreen):
+//            handleBottlesFlow(for: bottlesScreen, userData: nil)
+//        default:
+//            parentCoordinator?.moveTo(flow: flow, userData: nil)
+//        }
+//    }
+//    
+//    private func handleBottlesFlow(for screen: BottlesScreen, userData: [String: Any]?) {
+//        switch screen {
+//        case .bottle:
+//            resetToRoot()
+//        case .messages:
+//            go2BottlesMessages()
+//        }
+//    }
+//    
+//    
+//    // MARK: - routers
+//    private func go2BottlesMessages() {
+////        let vc = BottlesMessagesViewController(coordinator: self)
+////        push(viewController: vc)
+//        // test
+//        let vc1 = UniChatViewController()
+//        push(viewController: vc1)
+//    }
+//}

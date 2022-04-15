@@ -7,10 +7,10 @@
 
 import UIKit
 
-class ShakeHistoryViewController: BaseViewController, ShakeBaseCoordinated {
-    var coordinator: ShakeBaseCoordinator?
+class ShakeHistoryViewController: BaseViewController, MainBaseCoordinated {
+    var coordinator: MainCoordinator?
     
-    init(coordinator: ShakeBaseCoordinator) {
+    init(coordinator: MainCoordinator) {
         super.init(nibName: nil, bundle: nil)
         self.coordinator = coordinator
     }

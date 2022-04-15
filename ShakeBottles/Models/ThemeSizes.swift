@@ -9,12 +9,8 @@ import UIKit
 
 
 protocol ThemeSizes {
-    // Device related
-    var navigationBarHeight: CGFloat { get }
-    var tabBarHeight: CGFloat { get }
-    var statusBarHeight: CGFloat { get }
-    var screenWidth: CGFloat { get }
-    var screenHeight: CGFloat { get }
+    var buttonSize: CGFloat { get }
+    var inputHeight: CGFloat { get }
 
     // Fonts
     var fontSizeXXS: CGFloat { get }
@@ -48,12 +44,9 @@ protocol ThemeSizes {
 }
 
 struct DefaultThemeSizes: ThemeSizes {
-    let navigationBarHeight: CGFloat = 64
-    let tabBarHeight: CGFloat = 49
-    let statusBarHeight: CGFloat = 20
-    let screenWidth: CGFloat = UIScreen.main.bounds.width
-    let screenHeight: CGFloat = UIScreen.main.bounds.height
-
+    let buttonSize: CGFloat = 44
+    let inputHeight: CGFloat = 37
+    
     let fontSizeXXS: CGFloat = 8
     let fontSizeXS: CGFloat = 10
     let fontSizeS: CGFloat = 12

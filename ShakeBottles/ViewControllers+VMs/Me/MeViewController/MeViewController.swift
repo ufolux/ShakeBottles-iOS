@@ -6,11 +6,10 @@ import Foundation
 import UIKit
 import SnapKit
 
-final class MeViewController: BaseViewController, MeBaseCoordinated {
-    var coordinator: MeBaseCoordinator?
+final class MeViewController: BaseViewController  {
     private let vm = MeVM()
 
-    init(coordinator: MeBaseCoordinator) {
+    init(coordinator: MainCoordinator) {
         super.init(nibName: nil, bundle: nil)
         vm.coordinator = coordinator
     }

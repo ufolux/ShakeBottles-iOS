@@ -7,6 +7,6 @@
 
 import Foundation
 
-class ShakeVM: BaseViewModel, ShakeBaseCoordinated {
-    var coordinator: ShakeBaseCoordinator?
+class ShakeVM: BaseViewModel, MainBaseCoordinated {
+    var coordinator: MainCoordinator?
 }

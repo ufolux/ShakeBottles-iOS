@@ -11,7 +11,7 @@ import UIKit
 class BottlesViewController: BaseViewController {
     private let vm = BottlesVM()
 
-    init(coordinator: BottlesBaseCoordinator) {
+    init(coordinator: MainCoordinator) {
         super.init(nibName: nil, bundle: nil)
         vm.coordinator = coordinator
     }
@@ -26,9 +26,6 @@ class BottlesViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let editBtn = UIBarButtonItem(title: "Messages", style: .plain, target: self, action: #selector(messageBtnClicked))
-        navigationItem.rightBarButtonItem = editBtn
-        navigationItem.title = "Bottles"
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -37,13 +34,10 @@ class BottlesViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        vm.coordinator?.moveTo(flow: .bottle(.messages), userData: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-    }
-    
-    @objc func messageBtnClicked() {
-        vm.coordinator?.moveTo(flow: .bottle(.message), userData: nil)
     }
 }

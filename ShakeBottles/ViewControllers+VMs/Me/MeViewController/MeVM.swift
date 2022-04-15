@@ -17,7 +17,7 @@ struct SettingsCellModel {
     var tableIndex: UInt = 0
 }
 
-final class MeVM: BaseViewModel, MeBaseCoordinated {
+final class MeVM: BaseViewModel, MainBaseCoordinated {
     let settingsTableViewArray: Array<SettingsCellModel> = [
         SettingsCellModel(icon: "Appearance", title: "Appearance", tableIndex: 0),
         SettingsCellModel(icon: "Language", title: "Language", rightText: "English", tableIndex: 1),
@@ -25,5 +25,5 @@ final class MeVM: BaseViewModel, MeBaseCoordinated {
         SettingsCellModel(icon: "Credit", title: "Credit", tableIndex: 3),
         SettingsCellModel(icon: "About", title: "About ShakeBottles", tableIndex: 4),
     ]
-    var coordinator: MeBaseCoordinator?
+    var coordinator: MainCoordinator?
 }

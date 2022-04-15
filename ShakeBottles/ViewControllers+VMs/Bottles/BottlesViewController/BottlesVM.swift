@@ -7,6 +7,6 @@
 
 import Foundation
 
-class BottlesVM: BaseViewModel, BottlesBaseCoordinated {
-    var coordinator: BottlesBaseCoordinator?
+class BottlesVM: BaseViewModel, MainBaseCoordinated {
+    var coordinator: MainCoordinator?
 }

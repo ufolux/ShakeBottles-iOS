@@ -10,6 +10,7 @@ import UIKit
 
 class BottlesView: BaseView {
     private var vm: BottlesVM!
+    private var navBar: NavigationBar!
     private var pickBottleBtn: UIButton!
     private var throwBottleBtn: UIButton!
     private var btnsStackV: UIStackView!
@@ -19,17 +20,21 @@ class BottlesView: BaseView {
         super.init(frame: .zero)
         self.vm = vm
         backgroundColor = AppearanceManager.shared.colors.background
+                
+        // sea
+        bottleSeaV = BottleSeaView(vm: vm)
+        self.addSubview(bottleSeaV)
         
         // buttons
-        pickBottleBtn = UIButton()
-        throwBottleBtn = UIButton()
+        pickBottleBtn = UIButton(type: .system)
+        throwBottleBtn = UIButton(type: .system)
         btnsStackV = UIStackView(arrangedSubviews: [pickBottleBtn, throwBottleBtn])
         self.addSubview(btnsStackV)
         
         btnsStackV.axis = .horizontal
         btnsStackV.spacing = 60
         btnsStackV.snp.makeConstraints { make in
-            make.bottom.equalTo(self.snp.bottom).offset(-64)
+            make.bottomMargin.equalTo(-UIUtil.tabBarHeight-AppearanceManager.shared.sizes.marginM)
             make.centerX.equalTo(self.snp.centerX)
         }
         
@@ -37,7 +42,7 @@ class BottlesView: BaseView {
         let btnBgc: UInt = 0xFFF3C960
         pickBottleBtn.layer.cornerRadius = btnWidth / 2
         pickBottleBtn.backgroundColor = UIColor(btnBgc)
-        pickBottleBtn.setImage(UIImage(named: "NetImage"), for: .normal)
+        pickBottleBtn.setImage(UIImage(named: "NetImage")?.withRenderingMode(.alwaysOriginal), for: .normal)
         pickBottleBtn.imageView?.contentMode = .scaleAspectFit
         pickBottleBtn.imageEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
         pickBottleBtn.showsTouchWhenHighlighted = true
@@ -50,7 +55,7 @@ class BottlesView: BaseView {
         throwBottleBtn.layer.cornerRadius = btnWidth / 2
         throwBottleBtn.backgroundColor = UIColor(btnBgc)
         throwBottleBtn.layer.setAffineTransform(CGAffineTransform.init(rotationAngle: .pi/4))
-        throwBottleBtn.setImage(UIImage(named: "Bottle"), for: .normal)
+        throwBottleBtn.setImage(UIImage(named: "Bottle")?.withRenderingMode(.alwaysOriginal), for: .normal)
         throwBottleBtn.imageView?.contentMode = .scaleAspectFit
         throwBottleBtn.showsTouchWhenHighlighted = true
         throwBottleBtn.addTarget(self, action: #selector(throwBottleBtnClicked), for: .touchUpInside)
@@ -59,16 +64,25 @@ class BottlesView: BaseView {
             make.width.equalTo(btnWidth)
         }
         
-        // sea
-        bottleSeaV = BottleSeaView(vm: vm)
-        self.addSubview(bottleSeaV)
-        bottleSeaV.layer.zPosition = btnsStackV.layer.zPosition - 1
-        bottleSeaV.snp.makeConstraints { make in
+        
+        navBar = NavigationBar()
+        navBar.titleLabel.text = "Bottles"
+        let msgBtn = UIButton(type: .system)
+        msgBtn.setTitle("Messages", for: .normal)
+        msgBtn.setTitleColor(.systemBlue, for: .normal)
+        msgBtn.addTarget(self, action: #selector(messagesBtnClicked), for: .touchUpInside)
+        navBar.rightButton = msgBtn
+        addSubview(navBar)
+        navBar.snp.makeConstraints { make in
             make.centerX.equalTo(self.snp.centerX)
-            make.bottom.equalTo(self.snp.bottomMargin).offset(-24)
+            make.top.equalTo(UIUtil.statusBarHeight)
+        }
+        
+        bottleSeaV.snp.makeConstraints { make in
+            make.top.equalTo(navBar.snp.bottom)
+            make.bottomMargin.equalTo(-UIUtil.tabBarHeight)
             make.leading.equalTo(self.snp.leading)
             make.trailing.equalTo(self.snp.trailing)
-            make.top.equalTo(self.snp.top)
         }
     }
     
@@ -83,5 +97,10 @@ class BottlesView: BaseView {
     
     @objc func throwBottleBtnClicked() {
         // TODO: 2
+    }
+    
+    @objc func messagesBtnClicked() {
+        print("messages")
+        vm.coordinator?.moveTo(flow: .bottle(.messages), userData: nil)
     }
 }

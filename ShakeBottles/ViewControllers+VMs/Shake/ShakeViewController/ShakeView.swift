@@ -18,6 +18,7 @@ class ShakeView: BaseView, AVAudioPlayerDelegate {
     private let shakeSoundPath = Bundle.main.path(forResource: "ShakeKacha", ofType: "mp3")!
     private var shakeSoundData: Data!
     private var player: AVAudioPlayer?
+    private var navBar: NavigationBar!
     
     init(vm: ShakeVM) {
         super.init(frame: .zero)
@@ -61,6 +62,20 @@ class ShakeView: BaseView, AVAudioPlayerDelegate {
             make.leading.equalTo(self.snp.leading).offset(32)
             make.trailing.equalTo(self.snp.trailing).offset(-32)
         }
+        
+        navBar = NavigationBar()
+        navBar.titleLabel.text = "Shake"
+        let msgBtn = UIButton(type: .system)
+        msgBtn.setTitle("Historys", for: .normal)
+        msgBtn.setTitleColor(.systemBlue, for: .normal)
+        msgBtn.addTarget(self, action: #selector(historyBtnClicked), for: .touchUpInside)
+        navBar.rightButton = msgBtn
+        addSubview(navBar)
+        navBar.snp.makeConstraints { make in
+            make.centerX.equalTo(self.snp.centerX)
+            make.top.equalTo(UIUtil.statusBarHeight)
+        }
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -115,5 +130,10 @@ class ShakeView: BaseView, AVAudioPlayerDelegate {
                 player?.play()
             }
         }
+    }
+    
+    // MARK: - actions
+    @objc func historyBtnClicked() {
+        vm.coordinator?.moveTo(flow: .shake(.history), userData: nil)
     }
 }

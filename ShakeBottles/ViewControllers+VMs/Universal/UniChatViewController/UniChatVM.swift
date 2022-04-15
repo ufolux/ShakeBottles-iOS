@@ -5,5 +5,5 @@
 import Foundation
 
 class UniChatVM {
-
+    var title: String = "Chat"
 }

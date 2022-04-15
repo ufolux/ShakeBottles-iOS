@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 
 extension UIImageView {
-    public func loadImage(from url: URL, placeholder: UIImage?, mode: ContentMode = .scaleAspectFit) -> Void {
+    public static let placeholderImg = UIImage(systemName: "photo")!.withRenderingMode(.alwaysOriginal).withTintColor(AppearanceManager.shared.colors.placeholder)
+    public func loadImage(from url: URL, placeholder: UIImage = UIImageView.placeholderImg, mode: ContentMode = .scaleAspectFit) -> Void {
         contentMode = mode;
-        if placeholder != nil {
-            image = placeholder
-        }
+        image = placeholder
+        
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard
                 let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,

@@ -10,27 +10,36 @@ enum TabItem: String, CaseIterable {
     case bottles = "Bottles"
     case me = "Me"
 
-    var coordinator: Coordinator {
-        switch self {
-        case .shake:
-            return ShakeCoordinator()
-        case .bottles:
-            return BottlesCoordinator()
-        case .me:
-            return MeCoordinator()
-        }
-    }
-    
-//    var viewController: UIViewController {
+//    var coordinator: Coordinator {
 //        switch self {
 //        case .shake:
-//            return ShakeNavigationController()
+//            return ShakeCoordinator()
 //        case .bottles:
-//            return BottlesNavigationController()
+//            return BottlesCoordinator()
 //        case .me:
-//            return MeNavigationController()
+//            return MeCoordinator()
 //        }
 //    }
+    
+    var viewController: ((_ coordinator: MainCoordinator)->UIViewController) {
+        switch self {
+        case .shake:
+            return { (coordinator: MainCoordinator) -> UIViewController in
+                let viewController = ShakeViewController(coordinator: coordinator)
+                return viewController
+            }
+        case .bottles:
+            return { (coordinator: MainCoordinator) -> UIViewController in
+                let viewController = BottlesViewController(coordinator: coordinator)
+                return viewController
+            }
+        case .me:
+            return { (coordinator: MainCoordinator) -> UIViewController in
+                let viewController = MeViewController(coordinator: coordinator)
+                return viewController
+            }
+        }
+    }
 
     var icon: UIImage? {
         switch self {

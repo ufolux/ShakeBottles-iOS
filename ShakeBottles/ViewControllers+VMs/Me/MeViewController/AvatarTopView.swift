@@ -33,7 +33,7 @@ final class AvatarTopView: BaseView {
             _avatarURL
         }
     }
-    var nameStr: String = ""
+    var nameStr: String = "Richard Lu"
     var phoneNOStr: String = ""
     var idStr: String = ""
     

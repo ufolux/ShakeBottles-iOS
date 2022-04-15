@@ -8,10 +8,14 @@
 import Foundation
 
 protocol MainBaseCoordinator: Coordinator {
-    var shakeCoordinator: ShakeCoordinator { get }
-    var bottlesCoordinator: BottlesCoordinator { get }
-    var meCoordinator: MeCoordinator { get }
+//    var shakeCoordinator: ShakeCoordinator { get }
+//    var bottlesCoordinator: BottlesCoordinator { get }
+//    var meCoordinator: MeCoordinator { get }
     var deepLinkCoordinator: DeepLinkBaseCoordinator { get }
+}
+
+protocol MainBaseCoordinated {
+    var coordinator: MainCoordinator? { get }
 }
 
 protocol ShakeBaseCoordinated {

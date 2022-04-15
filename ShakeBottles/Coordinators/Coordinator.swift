@@ -20,7 +20,7 @@ enum ShakeScreen {
 
 enum BottlesScreen {
     case bottle
-    case message
+    case messages
 }
 
 enum MeScreen {
@@ -38,16 +38,16 @@ protocol FlowCoordinator: AnyObject {
 }
 
 protocol Coordinator: FlowCoordinator {
-    var rootViewController: UIViewController { get set }
+    var rootViewController: BaseNavigationController { get set }
     func start() -> UIViewController
     func moveTo(flow: AppFlow, userData: [String: Any]?)
     @discardableResult func resetToRoot(animated: Bool) -> Self
 }
 
 extension Coordinator {
-    var navigationRootViewController: UINavigationController? {
+    var navigationRootViewController: BaseNavigationController? {
         get {
-            (rootViewController as? UINavigationController)
+            rootViewController
         }
     }
 

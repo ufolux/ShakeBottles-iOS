@@ -18,4 +18,9 @@ class UIUtil {
     static let bottomSafeAreaHeight = UIApplication.shared.windows.first!.safeAreaInsets.bottom
     static let leftSafeAreaHeight = UIApplication.shared.windows.first!.safeAreaInsets.left
     static let rightSafeAreaHeight = UIApplication.shared.windows.first!.safeAreaInsets.right
+    
+    // MARK: - Nav Bar
+    static let navigationBarHeight: CGFloat = 44
+    static let tabBarHeight: CGFloat = 64 + bottomSafeAreaHeight
+    static let statusBarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
 }

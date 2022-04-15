@@ -11,15 +11,34 @@ import SnapKit
 
 class MainTabBarController: BaseTabBarController {
     var customTabBar: TabNavigationMenu!
-    var tabBarHeight: CGFloat = 67.0 + UIApplication.shared.windows.first!.safeAreaInsets.bottom
     let defaultIndex = 1
+    var coordinator: MainCoordinator!
 
+    init(coordinator: MainCoordinator) {
+        self.coordinator = coordinator
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadTabBar()
         delegate = self
     }
-
+    
     private func loadTabBar() {
         let tabItems: [TabItem] = [.shake, .bottles, .me]
         
@@ -53,11 +72,12 @@ class MainTabBarController: BaseTabBarController {
             make.trailing.equalTo(view.snp.trailing)
             make.bottom.equalTo(view.snp.bottom)
             make.width.equalTo(tabBar.frame.width)
-            make.height.equalTo(tabBarHeight)
+            make.height.equalTo(UIUtil.tabBarHeight)
         }
 
         for i in 0..<items.count {
-            controllers.append(items[i].coordinator.start())
+//            controllers.append(items[i].coordinator.start())
+            controllers.append(items[i].viewController(coordinator))
         }
         view.layoutIfNeeded()
         completion(controllers)
