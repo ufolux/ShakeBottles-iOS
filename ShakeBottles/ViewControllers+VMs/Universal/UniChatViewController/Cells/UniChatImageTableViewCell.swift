@@ -12,66 +12,19 @@ class UniChatImageTableViewCell: UITableViewCell {
     private var msgStatusView: UIImageView!
     private var bubbleContainer: UniChatCellBubbleView!
     
-    // setter
-    private var _side: UniChatCellSideType!
-    private var side: UniChatCellSideType {
-        set {
-            _side = newValue
-            if side == .me { // right
-                bubbleContainer.snp.remakeConstraints { make in
-                    make.leftMargin.greaterThanOrEqualTo(AppearanceManager.shared.sizes.marginChatBubbleL)
-                    make.rightMargin.equalTo(-AppearanceManager.shared.sizes.marginL)
-                    make.topMargin.equalTo(1)
-                    make.bottomMargin.equalTo(-1)
-                }
-                msgStatusView.snp.updateConstraints { make in
-                    make.width.equalTo(AppearanceManager.shared.sizes.fontSizeXS)
-                }
-            } else {  // left
-                bubbleContainer.snp.remakeConstraints { make in
-                    make.leftMargin.equalTo(AppearanceManager.shared.sizes.marginL)
-                    make.rightMargin.lessThanOrEqualTo(-AppearanceManager.shared.sizes.marginChatBubbleL)
-                    make.topMargin.equalTo(1)
-                    make.bottomMargin.equalTo(-1)
-                }
-                msgStatusView.snp.updateConstraints { make in
-                    make.width.equalTo(0)
-                }
-            }
-            updateConstraints()
-            updateConstraintsIfNeeded()
-            layoutIfNeeded()
-        }
-        get {
-            return _side
-        }
-    }
-    
-    private var _cellModel: UniChatImageCellModel!
-    private var cellModel: UniChatImageCellModel {
-        set {
-            _cellModel = newValue
-            imgView.loadImage(from: _cellModel.imageURL, placeholder: UIImageView.placeholderImg, mode: .scaleAspectFill)
-            timeLabel.text = _cellModel.timeStr
-            msgStatusView.image = _cellModel.status.icon
-        }
-        get {
-            return _cellModel
-        }
-    }
-    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = UIColor.clear
         contentView.backgroundColor = UIColor.clear
         selectionStyle = .none
         
-        bubbleContainer = UniChatCellBubbleView(side: .me, shape: .round)
+        bubbleContainer = UniChatCellBubbleView()
         contentView.addSubview(bubbleContainer)
         
         // init widgets
         imgView = UIImageView(frame: .zero)
         imgView.image = UIImageView.placeholderImg
+        imgView.translatesAutoresizingMaskIntoConstraints = false
         bubbleContainer.addSubview(imgView)
         
         timeLabel = UILabel(frame: .zero)
@@ -81,15 +34,18 @@ class UniChatImageTableViewCell: UITableViewCell {
         msgStatusView = UIImageView(frame: .zero)
         bubbleContainer.addSubview(msgStatusView)
         
+        let size = scaledImageSize(size: UIImageView.placeholderImg.size)
         imgView.snp.makeConstraints { make in
-            make.topMargin.equalTo(0)
-            make.bottomMargin.equalTo(0)
-            make.leftMargin.equalTo(0)
-            make.rightMargin.equalTo(0)
+            make.top.equalTo(self.bubbleContainer.snp.top)
+            make.bottom.equalTo(self.bubbleContainer.snp.bottom)
+            make.leading.equalTo(self.bubbleContainer.snp.leading)
+            make.trailing.equalTo(self.bubbleContainer.snp.trailing)
+            make.width.equalTo(size.width)
+            make.height.equalTo(size.height).priority(.high)
         }
         
         msgStatusView.snp.makeConstraints { make in
-            make.rightMargin.equalTo(-AppearanceManager.shared.sizes.marginS)
+            make.rightMargin.equalTo(-AppearanceManager.shared.sizes.marginL)
             make.bottomMargin.equalTo(-AppearanceManager.shared.sizes.marginM)
             make.height.equalTo(AppearanceManager.shared.sizes.fontSizeXS)
             make.width.equalTo(0)
@@ -101,10 +57,50 @@ class UniChatImageTableViewCell: UITableViewCell {
         }
     }
     
+    private func scaledImageSize(size: CGSize) -> CGSize {
+        let baseWidth = 2160.0
+        let maxWidth = UIUtil.screenWidth - AppearanceManager.shared.sizes.marginChatBubbleL
+        var scaledSize = CGSize.zero
+        if size.width > baseWidth {
+            scaledSize.width = maxWidth
+            scaledSize.height = maxWidth / size.width * size.height
+        } else {
+            let width = size.width / baseWidth * size.width
+            if width > maxWidth {
+                scaledSize.width = maxWidth
+                scaledSize.height = maxWidth / size.width * size.height
+            } else {
+                scaledSize.width = width
+                scaledSize.height = width / size.width * size.height
+            }
+        }
+        return scaledSize
+    }
+    
     public func update(withModel cellModel: UniChatImageCellModel, side: UniChatCellSideType, shape: UniChatCellShape = .round) {
-        bubbleContainer.update(withSide: side, shape: shape)
-        self.cellModel = cellModel
-        self.side = side
+        imgView.loadImage(from: cellModel.imageURL, placeholder: UIImageView.placeholderImg, mode: .scaleAspectFill) { [weak self] image in
+            let size = self!.scaledImageSize(size: image.size)
+            self!.imgView.snp.updateConstraints { make in
+                make.width.equalTo(size.width)
+                make.height.equalTo(size.height).priority(.high)
+            }
+        }
+        timeLabel.text = cellModel.timeStr
+        msgStatusView.image = cellModel.status.icon
+        
+        if side == .me { // right
+            msgStatusView.snp.updateConstraints { make in
+                make.width.equalTo(AppearanceManager.shared.sizes.fontSizeXS)
+            }
+        } else {  // left
+            msgStatusView.snp.updateConstraints { make in
+                make.width.equalTo(0)
+            }
+        }
+        bubbleContainer.setDisplay(side: side, shape: shape)
+        updateConstraints()
+        updateConstraintsIfNeeded()
+        layoutIfNeeded()
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

@@ -34,12 +34,6 @@ class UniChatView: BaseView {
         containerView.addSubview(tableView)
         addSubview(containerView)
         
-        inputComponent.snp.makeConstraints { make in
-            make.leading.equalTo(self.snp.leading)
-            make.trailing.equalTo(self.snp.trailing)
-            make.bottomMargin.equalTo(0)
-            make.height.equalTo(53 + UIUtil.bottomSafeAreaHeight)
-        }
         tableView.snp.makeConstraints { make in
             make.leading.equalTo(self.snp.leading)
             make.trailing.equalTo(self.snp.trailing)
@@ -47,9 +41,16 @@ class UniChatView: BaseView {
             make.bottom.equalTo(inputComponent.snp.top)
         }
         
+        inputComponent.snp.makeConstraints { make in
+            make.leading.equalTo(self.snp.leading)
+            make.trailing.equalTo(self.snp.trailing)
+            make.bottomMargin.equalTo(0)
+            make.height.equalTo(53 + UIUtil.bottomSafeAreaHeight)
+        }
+        
         containerView.snp.makeConstraints { make in
             make.topMargin.equalTo(0)
-            make.bottomMargin.equalTo(-AppearanceManager.shared.sizes.marginM)
+            make.bottomMargin.equalTo(0)
             make.width.equalTo(UIUtil.screenWidth)
             make.centerX.equalTo(UIUtil.screenWidth / 2.0)
         }

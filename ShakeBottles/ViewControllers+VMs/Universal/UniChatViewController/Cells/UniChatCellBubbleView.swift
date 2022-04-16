@@ -10,6 +10,7 @@ import SnapKit
 import RxCocoa
 import RxSwift
 
+// init first then setDisplay after added to superview
 class UniChatCellBubbleView: BaseView {
     // internal props
     private var side: UniChatCellSideType!
@@ -17,38 +18,38 @@ class UniChatCellBubbleView: BaseView {
     private var showArrow: Bool!
     private let disposeBag = DisposeBag()
     
-    init(side: UniChatCellSideType, shape: UniChatCellShape) {
+    init() {
         super.init(frame: .zero)
         rx.observe(CGRect.self, #keyPath(UIView.bounds))
             .subscribe(onNext: { [weak self] _ in
-                self!.draw(self!.bounds)
+                self?.setNeedsDisplay()
             }).disposed(by: disposeBag)
-        update(withSide: side, shape: shape)
+        isUserInteractionEnabled = true
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func update(withSide side: UniChatCellSideType, shape: UniChatCellShape = .round) {
+    public func setDisplay(side: UniChatCellSideType, shape: UniChatCellShape) {
         self.side = side
         self.shape = shape
-        updateView(side: side)
-    }
-    
-    private func updateView(side: UniChatCellSideType) {
         if side == .me {
-            layoutMargins = UIEdgeInsets(top: AppearanceManager.shared.sizes.marginM,
-                                         left: AppearanceManager.shared.sizes.marginL,
-                                         bottom: AppearanceManager.shared.sizes.marginM,
-                                         right: AppearanceManager.shared.sizes.marginL)
             backgroundColor = AppearanceManager.shared.colors.chatMeBubble
+            self.snp.remakeConstraints { make in
+                make.leftMargin.greaterThanOrEqualTo(AppearanceManager.shared.sizes.marginChatBubbleL)
+                make.rightMargin.equalTo(0)
+                make.topMargin.equalTo(AppearanceManager.shared.sizes.marginS)
+                make.bottomMargin.equalTo(-AppearanceManager.shared.sizes.marginS)
+            }
         } else {
-            layoutMargins = UIEdgeInsets(top: AppearanceManager.shared.sizes.marginM,
-                                         left: AppearanceManager.shared.sizes.marginL,
-                                         bottom: AppearanceManager.shared.sizes.marginM,
-                                         right: AppearanceManager.shared.sizes.marginL)
             backgroundColor = AppearanceManager.shared.colors.chatOtherBubble
+            self.snp.remakeConstraints { make in
+                make.leftMargin.equalTo(0)
+                make.rightMargin.lessThanOrEqualTo(-AppearanceManager.shared.sizes.marginChatBubbleL)
+                make.topMargin.equalTo(AppearanceManager.shared.sizes.marginS)
+                make.bottomMargin.equalTo(-AppearanceManager.shared.sizes.marginS)
+            }
         }
         setNeedsDisplay()
     }
@@ -71,13 +72,6 @@ class UniChatCellBubbleView: BaseView {
     }
     
     private func drawMeNoArrow(_ rect: CGRect) {
-        // MarginRight 4+8 = 12
-        //  ------------        |
-        // |            | .     |
-        // |            | .     |
-        //  ----------- \4.+8=12|
-        //             \  |
-        //              \ |
         var b = rect
         b.size.width -= AppearanceManager.shared.sizes.cornerRadiusM
         cornerRadius(bounds: b,

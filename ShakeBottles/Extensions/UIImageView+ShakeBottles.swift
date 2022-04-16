@@ -10,7 +10,8 @@ import UIKit
 
 extension UIImageView {
     public static let placeholderImg = UIImage(systemName: "photo")!.withRenderingMode(.alwaysOriginal).withTintColor(AppearanceManager.shared.colors.placeholder)
-    public func loadImage(from url: URL, placeholder: UIImage = UIImageView.placeholderImg, mode: ContentMode = .scaleAspectFit) -> Void {
+    
+    public func loadImage(from url: URL, placeholder: UIImage = UIImageView.placeholderImg, mode: ContentMode = .scaleAspectFit, completion: ((UIImage)->Void)? = nil) -> Void {
         contentMode = mode;
         image = placeholder
         
@@ -23,6 +24,9 @@ extension UIImageView {
             else { return }
             DispatchQueue.main.async { [weak self] in
                 self?.image = image
+                if completion != nil {
+                    completion!(image)
+                }
             }
         }.resume()
     }
